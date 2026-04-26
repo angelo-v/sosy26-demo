@@ -1,1 +1,4 @@
 node_modules
+solid-server/data/.internal/locks
+solid-server/data/.internal/idp
+solid-server/data/.internal/accounts/cookies
