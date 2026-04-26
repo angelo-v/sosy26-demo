@@ -1,0 +1,5 @@
+<#it> a <http://schema.org/LendAction>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Gave cable to Sophia";
+    <http://schema.org/startDate> "2026-05-01";
+    <http://schema.org/object> <../orders/order-amazon-2026-01#product-d4e5f6a7-b8c9-0123-defa-234567890123>;
+    <http://schema.org/borrower> <../my-contacts/Person/ad949651-5fbd-4c2f-b0bf-05821e937bed/index.ttl#this>.

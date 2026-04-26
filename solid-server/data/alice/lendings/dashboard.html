@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lendings</title>
+    <script
+            type="module"
+            src="https://cdn.jsdelivr.net/npm/@pod-os/elements/dist/elements/elements.esm.js">
+    </script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@pod-os/elements/dist/elements/elements.css"
+    />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        header {
+            padding: 1rem 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 2rem;
+        }
+
+        main {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            margin: 2rem 0 1rem;
+            color: #222;
+        }
+
+        dl {
+            margin: 1rem 0;
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 4px;
+        }
+
+        dt {
+            font-weight: 600;
+            margin-top: 0.75rem;
+            color: #555;
+        }
+
+        dt:first-child {
+            margin-top: 0;
+        }
+
+        dd {
+            margin-left: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .row pos-picture {
+            --width: 40px;
+            --height: 40px;
+            --border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .row pos-label {
+            flex: 1;
+        }
+
+        pos-rich-link pos-picture {
+            --width: 40px;
+            --height: 40px;
+            --border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        pos-rich-link pos-label {
+            flex: 1;
+        }
+
+        footer {
+            padding: 1rem 0;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <pos-app restore-previous-session>
+        <header><pos-login></pos-login></header>
+        <main>
+            <pos-resource uri="http://localhost:1526/alice/lendings/">
+                <pos-list fetch rel="http://www.w3.org/ns/ldp#contains"><template></template></pos-list>
+            </pos-resource>
+            <pos-list if-typeof="http://schema.org/LendAction">
+                <template>
+                    <h2><pos-label></pos-label></h2>
+                    <dl>
+                        <dt>Date:</dt>
+                        <dd><pos-value predicate="http://schema.org/startDate"></pos-value></dd>
+                        <dt>Borrower</dt>
+                        <dd>
+                            <pos-list fetch rel="http://schema.org/borrower">
+                                <template>
+                                        <pos-rich-link>
+                                            <div class="row">
+                                                <pos-picture no-upload></pos-picture>
+                                                <pos-label></pos-label>
+                                            </div>
+                                        </pos-rich-link>
+                                </template>
+                            </pos-list>
+                        </dd>
+                        <dt>Object</dt>
+                        <dd>
+                            <pos-list fetch rel="http://schema.org/object">
+                                <template>
+                                    <pos-rich-link>
+                                        <div class="row">
+                                            <pos-picture no-upload></pos-picture>
+                                            <pos-label></pos-label>
+                                        </div>
+                                    </pos-rich-link>
+                                </template>
+                            </pos-list>
+                        </dd>
+                    </dl>
+                </template>
+            </pos-list>
+        </main>
+        <footer>Built with PodOS</footer>
+    </pos-app>
+    <script>
+      document.addEventListener('pod-os:link', (event) => {
+        window.open('https://browser.pod-os.org?uri=' + encodeURIComponent(event.detail), '_blank');
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<#it> a <http://schema.org/LendAction>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Lent pen to Tobias";
+    <http://schema.org/startDate> "2025-08-15";
+    <http://schema.org/object> <../orders/order-bol-2026-02#product-6f7a8b9c-0d1e-2345-f6a7-890123456789>;
+    <http://schema.org/borrower> <../my-contacts/Person/82965378-1c3b-434b-ba25-436cd5541658/index.ttl#this>.
