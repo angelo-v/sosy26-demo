@@ -1,0 +1,21 @@
+@prefix schema: <http://schema.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<#song_9_flowers> a schema:MusicRecording ;
+    schema:name "Flowers" ;
+    schema:byArtist <#artist_miley_cyrus> ;
+    schema:inAlbum <#album_endless_summer_vacation> ;
+    dc:creator "Miley Cyrus" ;
+    dc:title "Flowers" ;
+    dc:issued "2024-01-01" ;
+    schema:image <http://localhost:1526/alice/music/cover_endless_summer_vacation.jpg> .
+
+<#artist_miley_cyrus> a schema:MusicGroup ;
+    schema:name "Miley Cyrus" ;
+    foaf:name "Miley Cyrus" .
+
+<#album_endless_summer_vacation> a schema:MusicAlbum ;
+    schema:name "Endless Summer Vacation" ;
+    schema:byArtist <#artist_miley_cyrus> ;
+    schema:datePublished "2024-01-01" .

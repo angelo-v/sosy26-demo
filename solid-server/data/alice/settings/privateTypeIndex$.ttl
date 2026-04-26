@@ -1,0 +1,21 @@
+
+
+
+<> a <http://www.w3.org/ns/solid/terms#TypeIndex>, <http://www.w3.org/ns/solid/terms#UnlistedDocument>.
+<#6b6f9d62-d5da-4b0c-b204-2deabddcb9ba> a <http://www.w3.org/ns/solid/terms#TypeRegistration>;
+                                        <http://www.w3.org/ns/solid/terms#forClass> <https://schema.org/Recipe>;
+                                        <http://www.w3.org/ns/solid/terms#instanceContainer> <../cookbook/>.
+<#243afc7c-9f6e-45ae-acec-c1d779752769> a <http://www.w3.org/ns/solid/terms#TypeRegistration>;
+                                        <http://www.w3.org/ns/solid/terms#forClass> <https://schema.org/Movie>;
+                                        <http://www.w3.org/ns/solid/terms#instanceContainer> <../movies/>.
+<#d11cd531-114d-4716-9ee1-e0f478dbe05a> a <http://www.w3.org/ns/solid/terms#TypeRegistration>;
+                                        <http://www.w3.org/ns/solid/terms#forClass> <https://schema.org/WatchAction>;
+                                        <http://www.w3.org/ns/solid/terms#instanceContainer> <../movies/>.
+<#4e6dd558-49c8-463d-a6ce-261221f4cd13> a <http://www.w3.org/ns/solid/terms#TypeRegistration>;
+                                        <http://www.w3.org/ns/solid/terms#forClass> <https://schema.org/Action>, <http://www.w3.org/2002/12/cal/ical#Vtodo>;
+                                        <http://www.w3.org/ns/solid/terms#instanceContainer> <../tasks/main/>.
+<#a9f3c821-7b4e-4d92-8e15-3f6a2d0b5c78> a <http://www.w3.org/ns/solid/terms#TypeRegistration>;
+                                        <http://www.w3.org/ns/solid/terms#forClass> <https://schema.org/Order>;
+                                        <http://www.w3.org/ns/solid/terms#instanceContainer> <../orders/>.
+<#id1711107279226> <http://www.w3.org/ns/solid/terms#instance> </alice/my-contacts/index.ttl#this>;
+                   <http://www.w3.org/ns/solid/terms#forClass> <http://www.w3.org/2006/vcard/ns#AddressBook>.

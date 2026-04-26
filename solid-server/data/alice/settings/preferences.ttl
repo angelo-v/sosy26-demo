@@ -1,0 +1,2 @@
+<../profile/card#me> <http://www.w3.org/ns/solid/terms#privateTypeIndex> <privateTypeIndex>;
+    <http://www.w3.org/ns/solid/terms#privateLabelIndex> <privateLabelIndex.ttl>.

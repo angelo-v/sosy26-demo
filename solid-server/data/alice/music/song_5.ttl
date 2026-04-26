@@ -1,0 +1,21 @@
+@prefix schema: <http://schema.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<#song_5_as_it_was> a schema:MusicRecording ;
+    schema:name "As It Was" ;
+    schema:byArtist <#artist_harry_styles> ;
+    schema:inAlbum <#album_harry's_house> ;
+    dc:creator "Harry Styles" ;
+    dc:title "As It Was" ;
+    dc:issued "2024-01-01" ;
+    schema:image <http://localhost:1526/alice/music/cover_harrys_house.jpg> .
+
+<#artist_harry_styles> a schema:MusicGroup ;
+    schema:name "Harry Styles" ;
+    foaf:name "Harry Styles" .
+
+<#album_harry's_house> a schema:MusicAlbum ;
+    schema:name "Harry's House" ;
+    schema:byArtist <#artist_harry_styles> ;
+    schema:datePublished "2024-01-01" .

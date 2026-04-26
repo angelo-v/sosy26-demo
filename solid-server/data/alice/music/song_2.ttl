@@ -1,0 +1,21 @@
+@prefix schema: <http://schema.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<#song_2_shape_of_you> a schema:MusicRecording ;
+    schema:name "Shape of You" ;
+    schema:byArtist <#artist_ed_sheeran> ;
+    schema:inAlbum <#album_divide> ;
+    dc:creator "Ed Sheeran" ;
+    dc:title "Shape of You" ;
+    dc:issued "2024-01-01" ;
+    schema:image <http://localhost:1526/alice/music/cover_divide.jpg> .
+
+<#artist_ed_sheeran> a schema:MusicGroup ;
+    schema:name "Ed Sheeran" ;
+    foaf:name "Ed Sheeran" .
+
+<#album_divide> a schema:MusicAlbum ;
+    schema:name "Divide" ;
+    schema:byArtist <#artist_ed_sheeran> ;
+    schema:datePublished "2024-01-01" .

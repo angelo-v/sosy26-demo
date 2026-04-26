@@ -1,0 +1,56 @@
+<#it> a <https://schema.org/Recipe>;
+    <https://schema.org/cookTime> "PT20M";
+    <https://schema.org/description> "Tofu gets quick-marinated in an herby, citrus marinade reminiscent of Mojo sauce but with smoky notes, then grilled to perfection. The tofu doesn't stick and it turns out perfectly chewy and crispy!";
+    <https://schema.org/image> <https://rainbowplantlife.com/wp-content/uploads/2021/06/Grilling-citrus-tofu-grilled.jpg>;
+    <https://schema.org/name> "Citrus-Chipotle Grilled Tofu";
+    <https://schema.org/prepTime> "PT30M";
+    <https://schema.org/recipeIngredient> "Simply Nature 100% Avocado Oil", "⅓ cup (80 mL) freshly squeezed orange juice", "6  garlic cloves,  (roughly chopped)", "3/4 cup (9g) cilantro (leaves and tender stems)", "2  chipotle peppers in adobo,  (plus 2 teaspoons adobo sauce)", "2 teaspoons orange zest", "2 ½ tablespoons freshly squeezed lime juice", "1 14- ounce block Earth Grown Organic Extra Firm Tofu", "1 tablespoon organic cane sugar or brown sugar", "1 teaspoon ground cumin", "1 teaspoon kosher salt (plus more to taste)", "¼ cup (60 mL) Simply Nature Organic Extra Virgin Olive Oil", "Lots of black pepper";
+    <https://schema.org/recipeInstructions> <#5acd9b3b-bc52-4f87-919c-a41a518d02ee>, <#0e067b05-e964-45dc-824f-fcef01726c56>, <#5224eb69-4dc6-41aa-b753-8dcbeb00b2e3>, <#a7ccac0d-2303-47ed-a6ad-4651605f0ea9>, <#e2dd0932-80e8-4a58-affa-5dfb8bade2be>, <#2ad3c389-fe89-4d92-8b8e-011e805205fe>;
+    <https://schema.org/recipeYield> "3,3 to 4";
+    <https://schema.org/sameAs> <https://rainbowplantlife.com/the-complete-guide-to-vegan-grilling/>.
+<#5acd9b3b-bc52-4f87-919c-a41a518d02ee> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 1;
+    <https://schema.org/text> "Drain the tofu. Slice the tofu crosswise into ⅓-inch slabs, about 8 to 11 slices per block. Arrange on a paper towel-lined cutting board and add a few paper towels on top. Weight with a heavy cookbook or cast-iron skillet. Press for 15 minutes to remove excess water.".
+<#0e067b05-e964-45dc-824f-fcef01726c56> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 2;
+    <https://schema.org/text> "Make the marinade: To a blender or food processor, add the cilantro, chipotle peppers and adobo sauce, garlic, orange zest, orange juice, lime juice, olive oil, sugar, cumin, salt, and black pepper to taste. Blend until relatively smooth. Season to taste with more salt and pepper needed. Reserve 4 tablespoons of the marinade.".
+<#5224eb69-4dc6-41aa-b753-8dcbeb00b2e3> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 3;
+    <https://schema.org/text> "Transfer tofu slabs to a shallow dish or pan and pour the rest of the marinade on top, using a pastry brush to evenly coat the tofu. Allow to marinate for at least 15 minutes at room temperature, or up to 1 hour in the fridge.".
+<#a7ccac0d-2303-47ed-a6ad-4651605f0ea9> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 4;
+    <https://schema.org/text> "Prepare the grill. Preheat a gas grill (between medium and medium-high) with the lid on for at least 10 minutes to get the grates really hot. Scrub down with a heavy-duty grill brush to remove any gunk or drippings. Set a small bowl with a few tablespoons of oil near the grill and oil up a wad of paper towels in the oil. Use a set of tongs to rub the preheated grill grates with the oil-soaked towels. Let the oil smoke for 40 seconds or so, then rub with oil again. Repeat three to four times total to build up a good layer of seasoning.".
+<#e2dd0932-80e8-4a58-affa-5dfb8bade2be> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 5;
+    <https://schema.org/text> "Immediately before or as soon as you add the tofu, turn the burners directly under the tofu to low heat and close the lid. Grill the tofu for 8 to 10 minutes, until nice grill marks form. Using a pair of tongs and/or a thin metal spatula, carefully flip each tofu slab and grill for another 7 to 10 minutes.".
+<#2ad3c389-fe89-4d92-8b8e-011e805205fe> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 6;
+    <https://schema.org/text> "Once the tofu is grilled, brush it with the reserved marinade.".
+<#5acd9b3b-bc52-4f87-919c-a41a518d02ee-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:51.460Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#5acd9b3b-bc52-4f87-919c-a41a518d02ee>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:51.460Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0e067b05-e964-45dc-824f-fcef01726c56-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:51.460Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#0e067b05-e964-45dc-824f-fcef01726c56>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:51.460Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#5224eb69-4dc6-41aa-b753-8dcbeb00b2e3-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:51.460Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#5224eb69-4dc6-41aa-b753-8dcbeb00b2e3>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:51.460Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a7ccac0d-2303-47ed-a6ad-4651605f0ea9-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:51.460Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#a7ccac0d-2303-47ed-a6ad-4651605f0ea9>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:51.460Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e2dd0932-80e8-4a58-affa-5dfb8bade2be-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:51.461Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#e2dd0932-80e8-4a58-affa-5dfb8bade2be>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:51.461Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#2ad3c389-fe89-4d92-8b8e-011e805205fe-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:51.461Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#2ad3c389-fe89-4d92-8b8e-011e805205fe>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:51.461Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#it-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:51.457Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:51.457Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.

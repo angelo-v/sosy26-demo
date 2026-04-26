@@ -1,0 +1,21 @@
+@prefix schema: <http://schema.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<#song_3_someone_you_loved> a schema:MusicRecording ;
+    schema:name "Someone You Loved" ;
+    schema:byArtist <#artist_lewis_capaldi> ;
+    schema:inAlbum <#album_divinely_uninspired_to_a_hellish_extent> ;
+    dc:creator "Lewis Capaldi" ;
+    dc:title "Someone You Loved" ;
+    dc:issued "2024-01-01" ;
+    schema:image <http://localhost:1526/alice/music/cover_divinely_uninspired.jpg> .
+
+<#artist_lewis_capaldi> a schema:MusicGroup ;
+    schema:name "Lewis Capaldi" ;
+    foaf:name "Lewis Capaldi" .
+
+<#album_divinely_uninspired_to_a_hellish_extent> a schema:MusicAlbum ;
+    schema:name "Divinely Uninspired to a Hellish Extent" ;
+    schema:byArtist <#artist_lewis_capaldi> ;
+    schema:datePublished "2024-01-01" .

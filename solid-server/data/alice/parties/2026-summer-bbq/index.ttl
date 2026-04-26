@@ -1,0 +1,34 @@
+@prefix :       <http://localhost:1526/alice/parties/2026-summer-bbq/index.ttl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix dc:     <http://purl.org/dc/terms/> .
+
+:this
+    a                schema:Event ;
+    dc:title         "Summer BBQ 2026" ;
+    dc:description   "A summer BBQ party with guests, food, music, and evening movie" ;
+    schema:startDate "2026-06-20" ;
+    schema:attendee  <http://localhost:1526/alice/my-contacts/Person/c71a360e-a164-45db-9a0d-c81a314e0866/index.ttl#this>,
+                     <http://localhost:1526/alice/my-contacts/Person/ad949651-5fbd-4c2f-b0bf-05821e937bed/index.ttl#this>,
+                     <http://localhost:1526/alice/my-contacts/Person/08c4ca88-0b12-4cf3-ae53-95469d1705fc/index.ttl#this>,
+                     <http://localhost:1526/alice/my-contacts/Person/b03d5982-63da-469a-9f29-4794268fdaa3/index.ttl#this> ;
+    schema:recipe    <http://localhost:1526/alice/cookbook/healthy-blackberry-basil-lemonade#it>,
+                     <http://localhost:1526/alice/cookbook/vegan-bbq-sauce#it>,
+                     <http://localhost:1526/alice/cookbook/grilled-vegan-stuffed-poblano-peppers#it>,
+                     <http://localhost:1526/alice/cookbook/grilled-tofu-skewers#it>,
+                     <http://localhost:1526/alice/cookbook/the-best-homemade-hummus#it>,
+                     <http://localhost:1526/alice/cookbook/easy-mango-avocado-salsa#it> ;
+    schema:workFeatured  <http://localhost:1526/alice/music/index.ttl#music-collection> ;
+    schema:subEvent      :movie-night ;
+.
+
+:movie-night
+    a                schema:ScreeningEvent ;
+    dc:title         "Evening Movie Night" ;
+    schema:workFeatured
+        <http://localhost:1526/alice/movies/barbie-2023#it>,
+        <http://localhost:1526/alice/movies/star-wars-1977#it>,
+        <http://localhost:1526/alice/movies/zootopia-2016#it> ;
+.
+

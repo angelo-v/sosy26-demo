@@ -1,0 +1,8 @@
+<#it> a <https://schema.org/Movie>;
+    <https://schema.org/name> "Star Wars";
+    <https://schema.org/sameAs> <https://www.themoviedb.org/movie/11>, <https://www.imdb.com/title/tt0076759>;
+    <http://purl.org/dc/terms/created> "2026-03-07T13:35:32Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://purl.org/dc/terms/modified> "2026-03-07T13:35:32Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://schema.org/description> "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.";
+    <https://schema.org/datePublished> "1977-05-25T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://schema.org/image> <https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg>.

@@ -1,0 +1,85 @@
+<#it> a <https://schema.org/Recipe>;
+    <https://schema.org/cookTime> "PT20M";
+    <https://schema.org/description> "Fire up the grill this summer and make these simple but delicious grilled tofu skewers! With these tips, you'll have perfectly grilled tofu: chewy, charred, and crispy! Take them over the top by serving them with one of five different flavorful sauce options.";
+    <https://schema.org/image> <https://rainbowplantlife.com/wp-content/uploads/2022/06/Grilled-Tofu-Skewers-closeup-scaled.jpg>;
+    <https://schema.org/name> "Grilled Tofu Skewers";
+    <https://schema.org/prepTime> "PT45M";
+    <https://schema.org/recipeIngredient> "Simply Nature 100% Avocado Oil for oiling the grill grates", "3/4 teaspoon garlic powder", "3/4 teaspoon onion powder", "2 tablespoons Fusia Soy Sauce", "1 (14-ounce) block of Earth Grown Organic Extra Firm Tofu, (drained)", "1 1/2 tablespoons Burman’s Dijon Mustard", "1 1/2 tablespoons agave nectar or maple syrup", "1 1/2 tablespoons freshly squeezed lime juice", "1 tablespoon Simply Nature 100% Avocado Oil", "1/4 teaspoon cayenne pepper", "Sauces of choice for serving (see recipe cards below)";
+    <https://schema.org/recipeInstructions> <#7b75b3d9-a822-4368-b2db-90f309dda0f2>, <#b0c4b056-3c83-495a-8e76-0fada90bb9ba>, <#4127a267-ba89-4662-80a6-8619f6f877b2>, <#f7b6ae20-fea5-4f38-95c6-19c2c9a720fb>, <#101344a5-277a-4940-b8e0-9e09848a8120>, <#6d590f96-b128-4b71-a7bc-764077d17512>, <#f6a5f4fd-511f-4e46-ad37-67a013eb65a8>, <#b0a4f96e-5a9e-4c1d-8e93-3aa962f470e1>, <#97f2034e-64e2-46b0-8f57-c9bda5fdd52f>, <#4389d9df-0459-4789-a0cf-fba315047dbf>;
+    <https://schema.org/recipeYield> "3,3 to 4";
+    <https://schema.org/sameAs> <https://rainbowplantlife.com/grilled-tofu-skewers/>;
+    <http://schema.org/suitableForDiet> <https://schema.org/VeganDiet>.
+<#7b75b3d9-a822-4368-b2db-90f309dda0f2> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 1;
+    <https://schema.org/text> "If using wooden skewers, soak them in warm water for 20 to 30 minutes (make sure they're completely submerged) to prevent burning. If using metal skewers, no need to soak.".
+<#b0c4b056-3c83-495a-8e76-0fada90bb9ba> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 2;
+    <https://schema.org/text> "Slice the drained tofu into 4 vertical slabs. Cover them with a few paper towels or a clean dish towel. Weigh them down with your heaviest cookbook and even out the weight with a few cans of beans (or use or a heavy skillet weighed down with a few cans). Press for 15 to 30 minutes.".
+<#4127a267-ba89-4662-80a6-8619f6f877b2> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 3;
+    <https://schema.org/text> "Cut the tofu into cubes, not too big or small but as evenly as possible. I usually slice each vertical slab in half, vertically, so I end up with 8 slices. Then cut each of the 8 slabs into 4 or 5 cubes.".
+<#f7b6ae20-fea5-4f38-95c6-19c2c9a720fb> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 4;
+    <https://schema.org/text> "Make the marinade. In a jar, combine the soy sauce, lime juice, mustard, agave or maple syrup, cayenne, garlic powder, and onion powder. Seal the lid, and shake vigorously to combine. Or add all the ingredients to a bowl and whisk well until spices are dissolved.".
+<#101344a5-277a-4940-b8e0-9e09848a8120> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 5;
+    <https://schema.org/text> "Marinate the tofu. Transfer tofu cubes to a large reusable bag, pour on the marinade, and gently toss to coat. Marinate for at least 15 minutes at room temperature, or up to 8 hours in the fridge. Flip the bag a few times to ensure the tofu is evenly coated.".
+<#6d590f96-b128-4b71-a7bc-764077d17512> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 6;
+    <https://schema.org/text> "Thread several tofu cubes onto a skewer, trying to get them evenly lined up and closely pushed together (this makes them easier to turn on the grill). Repeat with remaining tofu and skewers. Reserve the excess marinade.".
+<#f6a5f4fd-511f-4e46-ad37-67a013eb65a8> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 7;
+    <https://schema.org/text> "Prepare the grill. Preheat a gas grill* over medium-high heat (close the grill lid to trap the heat) for at least 10 minutes to get the grates really hot. Scrub down the hot grill with a heavy-duty grill brush to remove any gunk or drippings.".
+<#b0a4f96e-5a9e-4c1d-8e93-3aa962f470e1> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 8;
+    <https://schema.org/text> "After cleaning the grill, set a small bowl with a few tablespoons of avocado oil near the grill and oil up a wad of paper towels or a clean dish towel. Use a set of stainless steel tongs to rub the preheated grill grates with the oiled towels. Let the oil smoke for 3 to 40 seconds. Repeat this oiling process three to four times total to build up a good layer of seasoning.TIP: If you skip this step, the tofu will stick to the grill.".
+<#97f2034e-64e2-46b0-8f57-c9bda5fdd52f> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 9;
+    <https://schema.org/text> "Grill the tofu. As soon as you add the tofu to the grill, turn the burners directly underneath the tofu to low heat, but keep the other burners on medium-high heat. Close the lid. Open the lid every 3 ½ to 4 minutes and carefully rotate the skewers using tongs and/or a long stainless spatula. Close the lid and continue grilling, rotating every 3 ½ to 4 minutes, until grill marks are uniform, and parts of the tofu are charred, about 20 minutes total. Occasionally, after rotating the skewers, brush some reserved marinade on top of the tofu.".
+<#4389d9df-0459-4789-a0cf-fba315047dbf> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 10;
+    <https://schema.org/text> "Take the skewers off the grill and serve with sauces of choice.".
+<#7b75b3d9-a822-4368-b2db-90f309dda0f2-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:30:19.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#7b75b3d9-a822-4368-b2db-90f309dda0f2>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:30:19.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b0c4b056-3c83-495a-8e76-0fada90bb9ba-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:30:19.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#b0c4b056-3c83-495a-8e76-0fada90bb9ba>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:30:19.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4127a267-ba89-4662-80a6-8619f6f877b2-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:30:19.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#4127a267-ba89-4662-80a6-8619f6f877b2>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:30:19.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f7b6ae20-fea5-4f38-95c6-19c2c9a720fb-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:30:19.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#f7b6ae20-fea5-4f38-95c6-19c2c9a720fb>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:30:19.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#101344a5-277a-4940-b8e0-9e09848a8120-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:30:19.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#101344a5-277a-4940-b8e0-9e09848a8120>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:30:19.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#6d590f96-b128-4b71-a7bc-764077d17512-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:30:19.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#6d590f96-b128-4b71-a7bc-764077d17512>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:30:19.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#f6a5f4fd-511f-4e46-ad37-67a013eb65a8-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:30:19.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#f6a5f4fd-511f-4e46-ad37-67a013eb65a8>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:30:19.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b0a4f96e-5a9e-4c1d-8e93-3aa962f470e1-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:30:19.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#b0a4f96e-5a9e-4c1d-8e93-3aa962f470e1>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:30:19.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#97f2034e-64e2-46b0-8f57-c9bda5fdd52f-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:30:19.759Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#97f2034e-64e2-46b0-8f57-c9bda5fdd52f>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:30:19.759Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#4389d9df-0459-4789-a0cf-fba315047dbf-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:30:19.759Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#4389d9df-0459-4789-a0cf-fba315047dbf>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:30:19.759Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#it-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:30:19.754Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:30:19.754Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.

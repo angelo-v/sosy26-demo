@@ -1,0 +1,63 @@
+<#it> a <https://schema.org/Recipe>;
+    <https://schema.org/cookTime> "PT35M";
+    <https://schema.org/description> "These grilled vegan stuffed poblano peppers are an absolutely delicious spin on traditional stuffed peppers and kicked up a bit with the spices. Can be oven baked.";
+    <https://schema.org/image> <https://makeitdairyfree.com/wp-content/uploads/2021/05/vegan-stuffed-poblano-1.jpg>;
+    <https://schema.org/name> "Grilled Vegan Stuffed Poblano Peppers";
+    <https://schema.org/prepTime> "PT10M";
+    <https://schema.org/recipeIngredient> "1 1/2 cups cauliflower,  (riced)", "4 oz baby bella mushrooms (and stems),  (diced)", "1 tbsp lime juice", "1 tbsp olive oil", "1 tsp taco seasoning ((more or less to taste))", "4  poblano peppers,  (cut in half length wise, dessed)", "1 cup fresh corn,  (cut off cob)", "1/2 cup black beans, (drained and rinsed)", "1/2 cup red pepper,  (diced)", "1/2 cup sweet onion,  (diced)", "2 cups vegan cheese,  (divided, OPTIONAL)";
+    <https://schema.org/recipeInstructions> <#3e714545-7053-4883-8cd9-921ea38c3cb3>, <#1e352601-9df9-42d8-9af3-c17580ad9f99>, <#12719217-c050-45c3-ad8e-7f29fd5955ba>, <#0632d94e-f73f-4897-8e7e-3c66869d0f53>, <#760e307a-5df7-43b6-8dc6-4a015db28040>, <#e2af4c5e-5ffd-43c3-bc8b-a958f7a21398>, <#691a7b0e-d7ac-4ef0-9c23-05633429da1a>;
+    <https://schema.org/recipeYield> "4,4 people";
+    <https://schema.org/sameAs> <https://makeitdairyfree.com/grilled-vegan-stuffed-poblano-peppers/>.
+<#3e714545-7053-4883-8cd9-921ea38c3cb3> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 1;
+    <https://schema.org/text> "Heat oil in a medium skillet over medium heat on the side burner of grill.".
+<#1e352601-9df9-42d8-9af3-c17580ad9f99> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 2;
+    <https://schema.org/text> "Add diced red peppers and sweet onions and saute for 2 minutes.".
+<#12719217-c050-45c3-ad8e-7f29fd5955ba> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 3;
+    <https://schema.org/text> "Add diced mushrooms and saute for 2 minutes".
+<#0632d94e-f73f-4897-8e7e-3c66869d0f53> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 4;
+    <https://schema.org/text> "Add in rice cauliflower, black beans, corn, taco seasoning and lime juice.  Stir together and cook 1 more minute. Remove from heat.".
+<#760e307a-5df7-43b6-8dc6-4a015db28040> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 5;
+    <https://schema.org/text> "Heat one side of the grill to 350 degrees F.".
+<#e2af4c5e-5ffd-43c3-bc8b-a958f7a21398> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 6;
+    <https://schema.org/text> "Divide the mixture evenly into your pepper shells.  Top with plant based cheese if desired.".
+<#691a7b0e-d7ac-4ef0-9c23-05633429da1a> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 7;
+    <https://schema.org/text> "Add peppers to grill on indirect heat side. Cook for 20-35 minutes or until desired texture.".
+<#3e714545-7053-4883-8cd9-921ea38c3cb3-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:31:14.320Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#3e714545-7053-4883-8cd9-921ea38c3cb3>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:31:14.320Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#1e352601-9df9-42d8-9af3-c17580ad9f99-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:31:14.320Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#1e352601-9df9-42d8-9af3-c17580ad9f99>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:31:14.320Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#12719217-c050-45c3-ad8e-7f29fd5955ba-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:31:14.320Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#12719217-c050-45c3-ad8e-7f29fd5955ba>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:31:14.320Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0632d94e-f73f-4897-8e7e-3c66869d0f53-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:31:14.321Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#0632d94e-f73f-4897-8e7e-3c66869d0f53>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:31:14.321Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#760e307a-5df7-43b6-8dc6-4a015db28040-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:31:14.321Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#760e307a-5df7-43b6-8dc6-4a015db28040>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:31:14.321Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#e2af4c5e-5ffd-43c3-bc8b-a958f7a21398-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:31:14.321Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#e2af4c5e-5ffd-43c3-bc8b-a958f7a21398>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:31:14.321Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#691a7b0e-d7ac-4ef0-9c23-05633429da1a-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:31:14.321Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#691a7b0e-d7ac-4ef0-9c23-05633429da1a>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:31:14.321Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#it-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:31:14.318Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:31:14.318Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.

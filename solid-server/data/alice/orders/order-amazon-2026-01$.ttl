@@ -1,0 +1,79 @@
+<#it> a <https://schema.org/Order>;
+    <https://schema.org/orderNumber> "114-5829301-2847652";
+    <https://schema.org/orderDate> "2026-01-15T10:23:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://schema.org/orderStatus> <https://schema.org/OrderDelivered>;
+    <https://schema.org/seller> <#merchant>;
+    <https://schema.org/orderedItem> <#item-a1b2c3d4-e5f6-7890-abcd-ef1234567890>, <#item-b2c3d4e5-f6a7-8901-bcde-f12345678901>;
+    <https://schema.org/priceCurrency> "USD";
+    <https://schema.org/price> "174.98";
+    <http://purl.org/dc/terms/created> "2026-03-07T13:34:51Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://purl.org/dc/terms/modified> "2026-03-07T13:34:51Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#merchant> a <https://schema.org/Organization>;
+    <https://schema.org/name> "Amazon.com";
+    <https://schema.org/url> <https://www.amazon.com>.
+
+<#item-a1b2c3d4-e5f6-7890-abcd-ef1234567890> a <https://schema.org/OrderItem>;
+    <https://schema.org/orderItemStatus> <https://schema.org/OrderDelivered>;
+    <https://schema.org/orderQuantity> 1;
+    <https://schema.org/orderedItem> <#product-c3d4e5f6-a7b8-9012-cdef-123456789012>.
+
+<#product-c3d4e5f6-a7b8-9012-cdef-123456789012> a <https://schema.org/Product>;
+    <https://schema.org/name> "Kindle Paperwhite (16 GB)";
+    <https://schema.org/description> "The thinnest, lightest Kindle Paperwhite ever—with a flush-front design and 300 ppi glare-free display.";
+    <https://schema.org/sku> "B09TMF6475";
+    <https://schema.org/brand> <#brand-amazon>;
+    <https://schema.org/image> <https://m.media-amazon.com/images/I/51mt94z40rL._AC_SX679_.jpg>;
+    <https://schema.org/offers> <#offer-f6a7b8c9-d0e1-2345-fabc-456789012345>.
+
+<#offer-f6a7b8c9-d0e1-2345-fabc-456789012345> a <https://schema.org/Offer>;
+    <https://schema.org/price> "159.99";
+    <https://schema.org/priceCurrency> "USD".
+
+<#brand-amazon> a <https://schema.org/Brand>;
+    <https://schema.org/name> "Amazon".
+
+<#item-b2c3d4e5-f6a7-8901-bcde-f12345678901> a <https://schema.org/OrderItem>;
+    <https://schema.org/orderItemStatus> <https://schema.org/OrderDelivered>;
+    <https://schema.org/orderQuantity> 1;
+    <https://schema.org/orderedItem> <#product-d4e5f6a7-b8c9-0123-defa-234567890123>.
+
+<#product-d4e5f6a7-b8c9-0123-defa-234567890123> a <https://schema.org/Product>;
+    <https://schema.org/name> "USB-C Charging Cable 6ft 3-Pack";
+    <https://schema.org/description> "High-speed charging cable with braided nylon.";
+    <https://schema.org/sku> "B07K88C7KB";
+    <https://schema.org/brand> <#brand-anker>;
+    <https://schema.org/image> <https://i5.walmartimages.com/seo/Cable-Matters-3-Pack-Extreme-Flexible-USB-C-to-USB-C-Cable-6ft-in-Black-for-iPhone-and-Samsung_6a524b0e-90bc-4d8c-a53d-d9b6a45ecb77.aa859c98666ee2d206d7d46903945386.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF>;
+    <https://schema.org/offers> <#offer-b8c9d0e1-f2a3-4567-bcde-678901234567>.
+
+<#offer-b8c9d0e1-f2a3-4567-bcde-678901234567> a <https://schema.org/Offer>;
+    <https://schema.org/price> "14.99";
+    <https://schema.org/priceCurrency> "USD".
+
+<#brand-anker> a <https://schema.org/Brand>;
+    <https://schema.org/name> "Anker".
+
+<#it-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#item-a1b2c3d4-e5f6-7890-abcd-ef1234567890-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#item-a1b2c3d4-e5f6-7890-abcd-ef1234567890>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#item-b2c3d4e5-f6a7-8901-bcde-f12345678901-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#item-b2c3d4e5-f6a7-8901-bcde-f12345678901>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#product-c3d4e5f6-a7b8-9012-cdef-123456789012-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#product-c3d4e5f6-a7b8-9012-cdef-123456789012>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#product-d4e5f6a7-b8c9-0123-defa-234567890123-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#product-d4e5f6a7-b8c9-0123-defa-234567890123>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.

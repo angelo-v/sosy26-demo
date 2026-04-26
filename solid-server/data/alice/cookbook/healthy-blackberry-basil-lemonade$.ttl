@@ -1,0 +1,36 @@
+<#it> a <https://schema.org/Recipe>;
+    <https://schema.org/cookTime> "PT10M";
+    <https://schema.org/description> "This refreshing Blackberry Basil Lemonade is so unique you’ll never want to make classic lemonade again. Made with just 5 ingredients, it’s easy to make, refined sugar-free, and guaranteed to cool you down during the summer.";
+    <https://schema.org/image> <https://rainbowplantlife.com/wp-content/uploads/2020/11/52_image-asset.jpg>;
+    <https://schema.org/name> "Healthy Blackberry Basil Lemonade";
+    <https://schema.org/prepTime> "PT5M";
+    <https://schema.org/recipeIngredient> "6 to 8 cups (1.4 -1.9 L) water or sparkling water", "12 ounces (340g) fresh blackberries", "3/4 cup (~180 mL) pure maple syrup*", "1 cup (240 mL) freshly squeezed lemon juice (about 6 large juicy lemons)", "1/2 cup (~10g) basil leaves", "Ice for serving", "Optional: to make this an adult beverage, (add 1 – 1.5 ounces (30-45 mL) of vodka or gin per serving, and stir to combine.)";
+    <https://schema.org/recipeInstructions> <#16a192a5-444c-4c01-bd27-fc477bc38d24>, <#edecccc6-22e7-4d69-9733-ce674c10ac59>, <#a20d0df9-ff28-4cbf-8185-857178293334>;
+    <https://schema.org/recipeYield> "4";
+    <https://schema.org/sameAs> <https://rainbowplantlife.com/healthy-blackberry-basil-lemonade/>;
+    <http://schema.org/suitableForDiet> <https://schema.org/GlutenFreeDiet>.
+<#16a192a5-444c-4c01-bd27-fc477bc38d24> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 1;
+    <https://schema.org/text> "Combine the maple syrup and freshly squeezed lemon juice in a large pitcher. Stir in the water or sparkling water.".
+<#edecccc6-22e7-4d69-9733-ce674c10ac59> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 2;
+    <https://schema.org/text> "Add the blackberries and basil to a food processor. Puree until the berries are completely broken down.".
+<#a20d0df9-ff28-4cbf-8185-857178293334> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 3;
+    <https://schema.org/text> "Transfer the blackberry-basil puree to a fine mesh sieve placed over a bowl or over the pitcher. Using a large spoon, continuously press the puree through the sieve so the juice goes into the bowl/pitcher and all the fruit pulp and seeds are left in the sieve. Reserve the pulp and seeds for another use, such as smoothies or jam.".
+<#16a192a5-444c-4c01-bd27-fc477bc38d24-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:28:49.555Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#16a192a5-444c-4c01-bd27-fc477bc38d24>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:28:49.555Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#edecccc6-22e7-4d69-9733-ce674c10ac59-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:28:49.555Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#edecccc6-22e7-4d69-9733-ce674c10ac59>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:28:49.555Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a20d0df9-ff28-4cbf-8185-857178293334-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:28:49.556Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#a20d0df9-ff28-4cbf-8185-857178293334>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:28:49.556Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#it-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:28:49.553Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:28:49.553Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.

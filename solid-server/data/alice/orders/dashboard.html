@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Orders</title>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@pod-os/elements/dist/elements/elements.esm.js"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@pod-os/elements/dist/elements/elements.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: var(--font-sans);
+        min-height: 100vh;
+        background: var(--pos-app-background);
+        color: var(--pos-normal-text-color);
+        /* Override the heavy gradient background with a calm flat tone */
+        --pos-app-background: var(--color-slate-100);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          --pos-app-background: var(--color-grey-950);
+        }
+      }
+
+      /* ── Header ── */
+      header {
+        padding: var(--size-6) var(--size-10);
+        border-bottom: var(--pos-border-solid);
+        background: var(--pos-card-background);
+        display: flex;
+        align-items: center;
+        gap: var(--size-5);
+      }
+
+      .header-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: var(--radius-lg);
+        background: var(--color-blue-100);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .header-icon {
+          background: var(--color-blue-900);
+        }
+      }
+
+      .header-icon svg {
+        width: 22px;
+        height: 22px;
+        fill: none;
+        stroke: var(--color-blue-600);
+        stroke-width: 1.75;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .header-icon svg {
+          stroke: var(--color-blue-300);
+        }
+      }
+
+      .header-text {
+        display: flex;
+        gap: var(--size-2);
+        align-items: center;
+      }
+
+      .header-text h1 {
+        margin: 0;
+        font-size: var(--scale-3);
+        font-weight: var(--weight-bold);
+        color: var(--pos-normal-text-color);
+        line-height: var(--line-xs);
+      }
+
+      .header-text p {
+        margin: var(--size-1) 0 0;
+        font-size: var(--scale-00);
+        color: var(--pos-subtle-text-color);
+      }
+
+      /* ── Main ── */
+      main {
+        padding: var(--size-8) var(--size-6);
+        max-width: 860px;
+        margin: 0 auto;
+      }
+
+      /* ── Order list ── */
+      .order-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-8);
+      }
+
+      /* ── Order card ── */
+      .order-card {
+        background: var(--pos-card-background);
+        border: var(--pos-border-solid);
+        border-radius: var(--radius-2xl);
+        overflow: hidden;
+        box-shadow: var(--shadow-xs);
+        transition: box-shadow 0.2s ease, transform 0.2s ease;
+      }
+
+      .order-card:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateY(-2px);
+      }
+
+      /* ── Order header row ── */
+      .order-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: var(--size-4);
+        padding: var(--size-5) var(--size-6);
+        background: var(--pos-card-background);
+        border-bottom: var(--pos-border-solid);
+      }
+
+      .order-meta {
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-1);
+      }
+
+      .order-number-label {
+        font-size: var(--scale-000);
+        font-weight: var(--weight-medium);
+        color: var(--pos-subtle-text-color);
+      }
+
+      .order-number {
+        font-size: var(--scale-2);
+        font-weight: var(--weight-bold);
+        color: var(--pos-normal-text-color);
+        font-family: var(--font-mono);
+      }
+
+      .order-date {
+        font-size: var(--scale-000);
+        color: var(--pos-subtle-text-color);
+        margin-top: var(--size-1);
+      }
+
+      .order-merchant {
+        font-size: var(--scale-000);
+        color: var(--pos-subtle-text-color);
+        margin-top: var(--size-1);
+        font-weight: var(--weight-medium);
+      }
+
+      .order-summary {
+        display: flex;
+        align-items: center;
+        gap: var(--size-4);
+      }
+
+      .order-status {
+        font-size: var(--scale-000);
+        font-weight: var(--weight-semibold);
+        padding: var(--size-1) var(--size-3);
+        border-radius: var(--radius-full);
+        background: color-mix(in srgb, var(--color-green-500) 12%, transparent);
+        color: var(--color-green-700);
+        border: 1px solid color-mix(in srgb, var(--color-green-500) 35%, transparent);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .order-status {
+          color: var(--color-green-400);
+          background: color-mix(in srgb, var(--color-green-500) 18%, transparent);
+          border-color: color-mix(in srgb, var(--color-green-500) 30%, transparent);
+        }
+      }
+
+      .order-price-block {
+        text-align: right;
+      }
+
+      .order-price-label {
+        font-size: var(--scale-000);
+        font-weight: var(--weight-medium);
+        color: var(--pos-subtle-text-color);
+        line-height: 1;
+        margin-bottom: var(--size-1);
+      }
+
+      .order-price {
+        font-size: var(--scale-3);
+        font-weight: var(--weight-bold);
+        color: var(--pos-normal-text-color);
+        line-height: var(--line-none);
+      }
+
+      .order-currency {
+        font-weight: var(--weight-medium);
+        color: var(--pos-subtle-text-color);
+        margin-left: 2px;
+        vertical-align: super;
+        font-size: 0.65em;
+      }
+
+      /* ── Order items section ── */
+      .order-items {
+        padding: var(--size-5) var(--size-6);
+      }
+
+      .items-label {
+        font-size: var(--scale-000);
+        font-weight: var(--weight-semibold);
+        color: var(--pos-subtle-text-color);
+        margin-bottom: var(--size-4);
+      }
+
+      .item-row {
+        display: flex;
+        align-items: center;
+        gap: var(--size-4);
+        padding: var(--size-3) var(--size-2);
+        border-radius: var(--radius-lg);
+        transition: background 0.15s ease;
+      }
+
+      .item-row:not(:last-child) {
+        border-bottom: var(--pos-border-solid);
+      }
+
+      .item-row:hover {
+        background: color-mix(in srgb, var(--pos-border-color) 40%, transparent);
+      }
+
+      .item-picture {
+        flex-shrink: 0;
+        width: 56px;
+        height: 56px;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        border: var(--pos-border-solid);
+        background: var(--pos-background-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .item-picture pos-picture {
+        --width: 56px;
+        --height: 56px;
+        --border-radius: var(--radius-lg);
+        --object-fit: contain;
+        display: block;
+      }
+
+      .item-info {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .item-name {
+        font-size: var(--scale-0);
+        font-weight: var(--weight-semibold);
+        color: var(--pos-normal-text-color);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: var(--line-sm);
+      }
+
+      .item-brand {
+        font-size: var(--scale-000);
+        color: var(--pos-subtle-text-color);
+        margin-top: var(--size-1);
+        font-weight: var(--weight-medium);
+      }
+
+      .item-price {
+        font-size: var(--scale-1);
+        font-weight: var(--weight-bold);
+        color: var(--pos-normal-text-color);
+        white-space: nowrap;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .item-price::before {
+        content: "$";
+        font-size: 0.8em;
+        font-weight: var(--weight-regular);
+        color: var(--pos-subtle-text-color);
+        vertical-align: super;
+        margin-right: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <pos-app restore-previous-session>
+      <header>
+        <div class="header-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+        </div>
+        <div class="header-text">
+          <h1>My Orders</h1>
+          <pos-login></pos-login>
+        </div>
+      </header>
+
+      <main>
+        <pos-resource uri="http://localhost:1526/alice/orders/">
+          <pos-list
+            rel="http://www.w3.org/ns/ldp#contains"
+            fetch
+          >
+            <template><!--dummy list for fetching all order files--></template>
+          </pos-list>
+
+          <pos-list if-typeof="https://schema.org/Order" class="order-list">
+              <template>
+                  <div class="order-card">
+                    <div class="order-header">
+                      <div class="order-meta">
+                        <span class="order-number-label">Order #</span>
+                        <span class="order-number">
+                          <pos-rich-link><pos-value predicate="https://schema.org/orderNumber"></pos-value></pos-rich-link>
+                        </span>
+                        <span class="order-date">
+                        <pos-value predicate="https://schema.org/orderDate"></pos-value>
+                        </span>
+                        <span class="order-merchant">
+                        <pos-list rel="https://schema.org/seller" fetch>
+                          <template>
+                            <pos-value predicate="https://schema.org/name"></pos-value>
+                          </template>
+                        </pos-list>
+                      </span>
+                      </div>
+                      <div class="order-summary">
+                      <span class="order-status">
+                        <pos-label></pos-label>
+                      </span>
+                        <div class="order-price-block">
+                          <div class="order-price-label">Total</div>
+                          <span class="order-price">
+                          <pos-value predicate="https://schema.org/price"></pos-value>
+                          <span class="order-currency">
+                            <pos-value predicate="https://schema.org/priceCurrency"></pos-value>
+                          </span>
+                        </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="order-items">
+                      <div class="items-label">Items</div>
+                      <pos-list rel="https://schema.org/orderedItem" fetch>
+                        <template>
+                          <pos-list rel="https://schema.org/orderedItem" fetch>
+                            <template>
+                              <div class="item-row">
+                                <div class="item-picture">
+                                  <pos-picture no-upload></pos-picture>
+                                </div>
+                                <div class="item-info">
+                                  <div class="item-name">
+                                    <pos-rich-link>
+                                      <pos-value predicate="https://schema.org/name"></pos-value>
+                                    </pos-rich-link>
+
+                                  </div>
+                                  <div class="item-brand">
+                                    <pos-list rel="https://schema.org/brand" fetch>
+                                      <template>
+                                        <pos-value predicate="https://schema.org/name"></pos-value>
+                                      </template>
+                                    </pos-list>
+                                  </div>
+                                </div>
+                                <div class="item-price">
+                                  <pos-list rel="https://schema.org/offers" fetch>
+                                    <template>
+                                      <pos-value predicate="https://schema.org/price"></pos-value>
+                                    </template>
+                                  </pos-list>
+                                </div>
+                              </div>
+                            </template>
+                          </pos-list>
+                        </template>
+                      </pos-list>
+                    </div>
+                  </div>
+              </template>
+          </pos-list>
+
+        </pos-resource>
+      </main>
+    </pos-app>
+  <script>
+    document.addEventListener('pod-os:link', (event) => {
+      window.open('https://browser.pod-os.org?uri=' + encodeURIComponent(event.detail), '_blank');
+    });
+  </script>
+  </body>
+</html>

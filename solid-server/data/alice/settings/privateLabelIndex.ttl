@@ -1,0 +1,13 @@
+<> <http://www.w3.org/2000/01/rdf-schema#label> "Default Index".
+<../parties/2026-summer-bbq/> <http://www.w3.org/2000/01/rdf-schema#label> "2026-summer-bbq".
+<../my-contacts/index.ttl#this> <http://www.w3.org/2000/01/rdf-schema#label> "My Contacts".
+<../parties/2026-summer-bbq/plan.md> <http://www.w3.org/2000/01/rdf-schema#label> "Summer BBQ 2026".
+<../music/index.ttl#music-collection> <http://www.w3.org/2000/01/rdf-schema#label> "Top 10 Songs".
+<../inventory> <http://www.w3.org/2000/01/rdf-schema#label> "inventory".
+<../orders/order-amazon-2026-01#product-c3d4e5f6-a7b8-9012-cdef-123456789012> <http://www.w3.org/2000/01/rdf-schema#label> "Kindle Paperwhite (16 GB)".
+<../orders/order-amazon-2026-01#product-d4e5f6a7-b8c9-0123-defa-234567890123> <http://www.w3.org/2000/01/rdf-schema#label> "USB-C Charging Cable 6ft 3-Pack".
+<../orders/order-bol-2026-02#product-4d5e6f7a-8b9c-0123-d4e5-f67890123456> <http://www.w3.org/2000/01/rdf-schema#label> "The Pragmatic Programmer, 20th Anniversary Edition".
+<../orders/order-bol-2026-02#product-5e6f7a8b-9c0d-1234-e5f6-789012345678> <http://www.w3.org/2000/01/rdf-schema#label> "Moleskine Classic Notebook, Hard Cover, Large (5\" x 8.25\") Ruled/Lined, Black".
+<../orders/order-bol-2026-02#product-6f7a8b9c-0d1e-2345-f6a7-890123456789> <http://www.w3.org/2000/01/rdf-schema#label> "LAMY Safari Fountain Pen, Fine Nib, Charcoal".
+<../orders/order-mediamarkt-2026-03#product-5c6d7e8f-9a0b-1234-5c6d-7e8f90123456> <http://www.w3.org/2000/01/rdf-schema#label> "Philips Hue White and Color Ambiance A19 LED Smart Bulb Starter Kit".
+<../orders/order-mediamarkt-2026-03#product-6d7e8f9a-0b1c-2345-6d7e-8f9012345678> <http://www.w3.org/2000/01/rdf-schema#label> "TP-Link Kasa Smart WiFi Plug Mini (2-Pack)".

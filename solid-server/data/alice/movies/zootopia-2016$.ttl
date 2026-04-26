@@ -1,0 +1,8 @@
+<#it> a <https://schema.org/Movie>;
+    <https://schema.org/name> "Zootopia";
+    <https://schema.org/sameAs> <https://www.themoviedb.org/movie/269149>, <https://www.imdb.com/title/tt2948356>;
+    <http://purl.org/dc/terms/created> "2026-03-07T13:35:42Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://purl.org/dc/terms/modified> "2026-03-07T13:35:42Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://schema.org/description> "Determined to prove herself, Officer Judy Hopps, the first bunny on Zootopia's police force, jumps at the chance to crack her first case - even if it means partnering with scam-artist fox Nick Wilde to solve the mystery.";
+    <https://schema.org/datePublished> "2016-02-11T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://schema.org/image> <https://image.tmdb.org/t/p/w500/hlK0e0wAQ3VLuJcsfIYPvb4JVud.jpg>.

@@ -1,0 +1,25 @@
+@prefix :       <http://localhost:1526/alice/parties/2026-autumn-harvest/index.ttl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix dc:     <http://purl.org/dc/terms/> .
+
+:this
+    a                schema:Event ;
+    dc:title         "Autumn Harvest 2026" ;
+    dc:description   "A cosy autumn harvest gathering with friends, seasonal food, live music, and a bonfire film night" ;
+    schema:startDate "2026-10-17" ;
+    schema:attendee  <http://localhost:1526/alice/my-contacts/Person/82965378-1c3b-434b-ba25-436cd5541658/index.ttl#this>,
+                     <http://localhost:1526/alice/my-contacts/Person/a635e47d-8a66-4d21-a83b-2088513edd67/index.ttl#this>,
+                     <http://localhost:1526/alice/my-contacts/Person/ce50941f-1e07-4951-bdd7-7ced287ca976/index.ttl#this> ;
+    schema:recipe    <http://localhost:1526/alice/cookbook/citrus-chipotle-grilled-tofu#it> ;
+    schema:workFeatured  <http://localhost:1526/alice/music/autumn-vibes#autumn-vibes> ;
+    schema:subEvent      :bonfire-film-night ;
+.
+
+:bonfire-film-night
+    a                schema:ScreeningEvent ;
+    dc:title         "Bonfire Film Night" ;
+    schema:workFeatured
+        <http://localhost:1526/alice/movies/zootopia-2016#it> ;
+.

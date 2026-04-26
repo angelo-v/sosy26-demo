@@ -1,0 +1,21 @@
+@prefix schema: <http://schema.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<#song_6_anti-hero> a schema:MusicRecording ;
+    schema:name "Anti-Hero" ;
+    schema:byArtist <#artist_taylor_swift> ;
+    schema:inAlbum <#album_midnights> ;
+    dc:creator "Taylor Swift" ;
+    dc:title "Anti-Hero" ;
+    dc:issued "2024-01-01" ;
+    schema:image <http://localhost:1526/alice/music/cover_midnights.jpg> .
+
+<#artist_taylor_swift> a schema:MusicGroup ;
+    schema:name "Taylor Swift" ;
+    foaf:name "Taylor Swift" .
+
+<#album_midnights> a schema:MusicAlbum ;
+    schema:name "Midnights" ;
+    schema:byArtist <#artist_taylor_swift> ;
+    schema:datePublished "2024-01-01" .

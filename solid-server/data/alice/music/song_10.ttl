@@ -1,0 +1,21 @@
+@prefix schema: <http://schema.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<#song_10_uptown_funk> a schema:MusicRecording ;
+    schema:name "Uptown Funk" ;
+    schema:byArtist <#artist_mark_ronson__bruno_mars> ;
+    schema:inAlbum <#album_uptown_special> ;
+    dc:creator "Mark Ronson ft. Bruno Mars" ;
+    dc:title "Uptown Funk" ;
+    dc:issued "2024-01-01" ;
+    schema:image <http://localhost:1526/alice/music/cover_uptown_special.jpg> .
+
+<#artist_mark_ronson__bruno_mars> a schema:MusicGroup ;
+    schema:name "Mark Ronson ft. Bruno Mars" ;
+    foaf:name "Mark Ronson ft. Bruno Mars" .
+
+<#album_uptown_special> a schema:MusicAlbum ;
+    schema:name "Uptown Special" ;
+    schema:byArtist <#artist_mark_ronson__bruno_mars> ;
+    schema:datePublished "2024-01-01" .

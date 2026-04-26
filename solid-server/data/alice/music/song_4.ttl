@@ -1,0 +1,21 @@
+@prefix schema: <http://schema.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<#song_4_don't_start_now> a schema:MusicRecording ;
+    schema:name "Don't Start Now" ;
+    schema:byArtist <#artist_dua_lipa> ;
+    schema:inAlbum <#album_future_nostalgia> ;
+    dc:creator "Dua Lipa" ;
+    dc:title "Don't Start Now" ;
+    dc:issued "2024-01-01" ;
+    schema:image <http://localhost:1526/alice/music/cover_future_nostalgia.jpg> .
+
+<#artist_dua_lipa> a schema:MusicGroup ;
+    schema:name "Dua Lipa" ;
+    foaf:name "Dua Lipa" .
+
+<#album_future_nostalgia> a schema:MusicAlbum ;
+    schema:name "Future Nostalgia" ;
+    schema:byArtist <#artist_dua_lipa> ;
+    schema:datePublished "2024-01-01" .

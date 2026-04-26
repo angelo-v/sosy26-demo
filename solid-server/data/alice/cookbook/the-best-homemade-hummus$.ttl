@@ -1,0 +1,56 @@
+<#it> a <https://schema.org/Recipe>;
+    <https://schema.org/cookTime> "PT55M";
+    <https://schema.org/description> "This life-changing homemade hummus is creamy, fluffy, and packed with a nutty, lemony flavor. Easy to make with minimal ingredients, this versatile dip is 10x better than the vastly inferior versions sold in grocery stores.";
+    <https://schema.org/image> <https://rainbowplantlife.com/wp-content/uploads/2021/03/Hummus-2026-hero-photo-4-scaled.jpg>;
+    <https://schema.org/name> "The Best Homemade Hummus";
+    <https://schema.org/prepTime> "PT5M";
+    <https://schema.org/recipeIngredient> "8 ounces (227) dried chickpeas ((1 cup + 2 tbsp)(See Note 1))", "A generous ¾ cup  (~185g) good-quality tahini", "⅓ cup (75g) good-quality extra virgin olive oil", "6 tablespoons freshly squeezed lemon juice, (plus more to taste)", "6 to 10 tablespoons (90 to 150 mL)  ice water", "5 large cloves garlic, (thinly sliced)", "4 to 6 strips of lemon peel,  (about 2 inches long (don't peel too deeply to avoid the white pith))", "3 cloves garlic,  (chopped (See Note 2))", "Diamond Crystal kosher salt ((see Note 3))", "1 handful of flat-leaf parsley,  (chopped )", "1 teaspoon baking soda,  (divided)", "1 teaspoon ground cumin,  (plus more to taste)", "Flaky sea salt or kosher salt", "Freshly cracked black pepper", "Paprika or Aleppo pepper ((or sumac) )", "Warm pita or lavash bread (for dipping)";
+    <https://schema.org/recipeInstructions> <#fd57cfe8-0228-4dc7-993b-7d1c9d016dbb>, <#6fc84788-3fb6-4ef0-929c-67941399dc05>, <#7d0f2cfe-87c5-4f7e-8a22-8f6076a79b12>, <#b0b396bc-e9d8-42db-aa65-8d56432b319d>, <#df52db47-e7e4-4741-8e0d-1a83d12f7207>, <#08b0fee2-d6e0-421d-9c13-fdb332019cf0>;
+    <https://schema.org/recipeYield> "8,8 to 10";
+    <https://schema.org/sameAs> <https://rainbowplantlife.com/how-to-make-amazing-hummus-at-home/>.
+<#fd57cfe8-0228-4dc7-993b-7d1c9d016dbb> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 1;
+    <https://schema.org/text> "Soak the chickpeas. Add the chickpeas to a large bowl. Cover with cold water and ½ teaspoon baking soda. Soak for 8 hours or overnight. Drain and rinse.".
+<#6fc84788-3fb6-4ef0-929c-67941399dc05> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 2;
+    <https://schema.org/text> "Cook the chickpeas. Add the drained chickpeas to a medium saucepan with ½ teaspoon baking soda and 6 cups (1.4 L) water. Bring to a boil over medium-high heat. Cover the pot, and reduce the heat as needed to maintain a rapid simmer and cook for 30 minutes.Uncover the pot and add 1 teaspoon of kosher salt. Continue cooking for 10 to 15 minutes, or until the chickpeas are very soft and smush when pressed with a spoon/fork or pressed between your fingers. Drain well.".
+<#7d0f2cfe-87c5-4f7e-8a22-8f6076a79b12> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 3;
+    <https://schema.org/text> "Drain the chickpeas, then transfer to a food processor. Blend for 1-2 minutes until you have a smooth puree, scraping down the sides as you go.".
+<#b0b396bc-e9d8-42db-aa65-8d56432b319d> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 4;
+    <https://schema.org/text> "To the food processor, add the tahini, lemon juice, garlic, cumin, 1 heaping teaspoon kosher salt, and black pepper to taste. Blend, and with the motor running, stream in the ice water, 1 tablespoon at a time.After 6 tablespoons of ice water, evaluate the texture. If it’s still stiff or you want it to be looser, stream in more water, and continue blending until smooth and creamy. Once you reach your desired texture, taste for seasonings, adding more salt, garlic, cumin, or lemon juice as needed.".
+<#df52db47-e7e4-4741-8e0d-1a83d12f7207> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 5;
+    <https://schema.org/text> "Make the Fried Lemon-Garlic Topping. Fit a fine-mesh sieve over a bowl. Add the olive oil to a medium frying pan and turn to medium heat. Once the oil is warm (but not too hot), add the thinly sliced garlic and cook, swirling the pan or stirring frequently, for 2 to 2 ½ minutes, until the garlic just turns golden (don't wait until it browns—it will turn bitter).Add the lemon peel strips and cook for another 30 seconds, stirring almost constantly. Remove from the heat and pour the mixture into the strainer, reserving the oil in the bowl.Transfer the garlic and lemon zest to a plate and sprinkle them with a bit of flaky sea salt.".
+<#08b0fee2-d6e0-421d-9c13-fdb332019cf0> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 6;
+    <https://schema.org/text> "Transfer the hummus to a shallow bowl or plate with a lip. Use the back of a spoon to make waves or a well in the center. Spoon the reserved oil into the ridges or into the well. Top with the fried garlic and lemon zest mixture. Top with chopped parsley and a few shakes of paprika or Aleppo pepper. Dig in with warm pita!".
+<#fd57cfe8-0228-4dc7-993b-7d1c9d016dbb-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:27.410Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#fd57cfe8-0228-4dc7-993b-7d1c9d016dbb>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:27.410Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#6fc84788-3fb6-4ef0-929c-67941399dc05-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:27.410Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#6fc84788-3fb6-4ef0-929c-67941399dc05>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:27.410Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#7d0f2cfe-87c5-4f7e-8a22-8f6076a79b12-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:27.410Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#7d0f2cfe-87c5-4f7e-8a22-8f6076a79b12>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:27.410Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#b0b396bc-e9d8-42db-aa65-8d56432b319d-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:27.410Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#b0b396bc-e9d8-42db-aa65-8d56432b319d>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:27.410Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#df52db47-e7e4-4741-8e0d-1a83d12f7207-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:27.411Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#df52db47-e7e4-4741-8e0d-1a83d12f7207>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:27.411Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#08b0fee2-d6e0-421d-9c13-fdb332019cf0-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:27.411Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#08b0fee2-d6e0-421d-9c13-fdb332019cf0>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:27.411Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#it-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:27.406Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:27.406Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.

@@ -1,0 +1,10 @@
+@prefix schema: <http://schema.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<#autumn-vibes> a schema:MusicPlaylist ;
+    schema:name "Autumn Vibes" ;
+    schema:hasPart <song_3.ttl#song_3_someone_you_loved> ;
+    schema:hasPart <song_5.ttl#song_5_as_it_was> ;
+    schema:hasPart <song_6.ttl#song_6_anti-hero> ;
+    dc:created "2026-03-07" ;
+    dc:description "A cosy autumn playlist" .

@@ -1,0 +1,5 @@
+<http://localhost:1526/alice/tasks/main/summer-bbq/> <http://www.w3.org/2000/01/rdf-schema#label> "Summer BBQ".
+<http://localhost:1526/alice/tasks/main/summer-bbq/#metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:47:49.017Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <http://localhost:1526/alice/tasks/main/summer-bbq/>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:47:49.017Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.

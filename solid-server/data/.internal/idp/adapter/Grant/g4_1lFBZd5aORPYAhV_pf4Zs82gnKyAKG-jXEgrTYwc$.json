@@ -1,0 +1,1 @@
+{"key":"idp/adapter/Grant/g4_1lFBZd5aORPYAhV_pf4Zs82gnKyAKG-jXEgrTYwc","payload":{"expires":"2026-04-24T11:18:20.484Z","payload":{"iat":1775819900,"exp":1777029500,"accountId":"http://localhost:1526/alice/profile/card#me","clientId":"lQxqXQb3VsnvjEUh_qG-1","kind":"Grant","jti":"g4_1lFBZd5aORPYAhV_pf4Zs82gnKyAKG-jXEgrTYwc","openid":{"scope":"openid offline_access webid"}}}}

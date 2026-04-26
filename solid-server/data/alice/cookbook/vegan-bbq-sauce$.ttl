@@ -1,0 +1,35 @@
+<#it> a <https://schema.org/Recipe>;
+    <https://schema.org/cookTime> "PT5M";
+    <https://schema.org/description> "This vegan BBQ sauce is perfectly sweet yet tangy, smoky, and a little spicy. It's simple to make and tastes just like your favorite bottled BBQ sauce. Plus, it's ready in just 10 minutes!";
+    <https://schema.org/image> <https://rainbowplantlife.com/wp-content/uploads/2021/06/BBQ-sauce-spoon-uncropped-1-of-1.jpg>;
+    <https://schema.org/name> "Vegan BBQ Sauce";
+    <https://schema.org/prepTime> "PT5M";
+    <https://schema.org/recipeIngredient> "4 tablespoons (80g ) maple syrup", "3 tablespoons apple cider vinegar", "3 tablespoons cold water", "3/4 teaspoon black pepper", "2 tablespoons molasses", "2 tablespoons soy sauce or tamari", "1 1/2 tablespoons arrowroot powder (or cornstarch)", "1 1/2 teaspoon chili powder", "1 1/2 teaspoons smoked paprika", "1 cup (275-280g) organic ketchup", "1 tablespoon liquid smoke**", "1 tablespoon vegan Worcestershire sauce*", "Heaping 1/4 teaspoon garlic powder", "Heaping 1/4 teaspoon onion powder", "⅛ teaspoon cayenne pepper ((optional))";
+    <https://schema.org/recipeInstructions> <#e91a6ed1-63c4-4ddc-b641-ef207bff2551>, <#059eebaa-9cbd-44a3-b7dc-814804a87255>, <#c7337d35-695a-47bf-920c-ae518c6171b1>;
+    <https://schema.org/recipeYield> "12,12 (2 tbsp)";
+    <https://schema.org/sameAs> <https://rainbowplantlife.com/vegan-bbq-sauce/>.
+<#e91a6ed1-63c4-4ddc-b641-ef207bff2551> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 1;
+    <https://schema.org/text> "Add all of the ingredients to a mixing bowl. Whisk well to combine. Taste, adding a pinch of salt or pepper as needed. For more sweetness, add a bit more maple syrup. For more smokiness, add a few drops more of liquid smoke or a few dashes of smoked paprika.".
+<#059eebaa-9cbd-44a3-b7dc-814804a87255> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 2;
+    <https://schema.org/text> "Transfer the BBQ sauce to a small frying pan and simmer for 3 to 5 minutes, stirring at least once a minute.***Take off the heat. Once cool, transfer to an airtight jar and refrigerate. It will thicken as it chills. Store for 2 to 3 months (yes, months is right; the high acidity content keeps it fresh).".
+<#c7337d35-695a-47bf-920c-ae518c6171b1> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 3;
+    <https://schema.org/text> "To thicken the sauce even more, whisk together arrowroot powder and cold water until smooth and no clumps remain. Add the slurry to the simmering sauce (from step 2) and whisk frequently for 1-2 minutes, or until the sauce is thickened. Take off the heat (don't let it keep simmering, or the arrowroot powder can start to congeal).".
+<#e91a6ed1-63c4-4ddc-b641-ef207bff2551-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:30:35.017Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#e91a6ed1-63c4-4ddc-b641-ef207bff2551>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:30:35.017Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#059eebaa-9cbd-44a3-b7dc-814804a87255-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:30:35.017Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#059eebaa-9cbd-44a3-b7dc-814804a87255>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:30:35.017Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#c7337d35-695a-47bf-920c-ae518c6171b1-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:30:35.017Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#c7337d35-695a-47bf-920c-ae518c6171b1>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:30:35.017Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#it-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:30:35.016Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:30:35.016Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.

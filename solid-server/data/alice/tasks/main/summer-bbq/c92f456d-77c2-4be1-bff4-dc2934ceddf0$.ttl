@@ -1,0 +1,42 @@
+<#it> a <https://schema.org/Action>, <http://www.w3.org/2002/12/cal/ical#Vtodo>;
+    <http://www.w3.org/2002/12/cal/ical#summary> "Send out invitations";
+    <https://schema.org/actionStatus> <https://schema.org/PotentialActionStatus>;
+    <https://schema.org/name> "Send out invitations".
+<#it-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:48:29.247Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T17:58:33.566Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#it-operation-a1d6ee75-7159-4b8a-9189-1c2e1427fb82> a <https://vocab.noeldemartin.com/crdt/SetPropertyOperation>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/date> "2026-03-07T13:48:29.247Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/property> <https://schema.org/actionStatus>;
+    <https://vocab.noeldemartin.com/crdt/value> <https://schema.org/PotentialActionStatus>.
+<#it-operation-e3cb5b08-f1c4-4f6f-b2f9-b7855edb94a9> a <https://vocab.noeldemartin.com/crdt/SetPropertyOperation>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/date> "2026-03-07T13:48:29.247Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/property> <http://www.w3.org/2002/12/cal/ical#summary>;
+    <https://vocab.noeldemartin.com/crdt/value> "Send out invitations".
+<#it-operation-e513288e-8cef-481a-8515-e11f2432d959> a <https://vocab.noeldemartin.com/crdt/SetPropertyOperation>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/date> "2026-03-07T13:48:29.247Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/property> <https://schema.org/name>;
+    <https://vocab.noeldemartin.com/crdt/value> "Send out invitations".
+<#it-operation-79e0694f-b6cc-4d87-bb0c-cadd74bdb122> a <https://vocab.noeldemartin.com/crdt/SetPropertyOperation>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/date> "2026-03-07T13:51:04.097Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/property> <https://schema.org/actionStatus>;
+    <https://vocab.noeldemartin.com/crdt/value> <https://schema.org/CompletedActionStatus>.
+<#it-operation-ecf833f7-51d0-43a2-beb5-c4dfd07271df> a <https://vocab.noeldemartin.com/crdt/SetPropertyOperation>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/date> "2026-03-07T13:51:04.097Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/property> <http://www.w3.org/2002/12/cal/ical#completed>;
+    <https://vocab.noeldemartin.com/crdt/value> "2026-03-07T13:51:04.089Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#it-operation-170451c8-5f5c-44dd-93d6-b11caaa772f1> a <https://vocab.noeldemartin.com/crdt/UnsetPropertyOperation>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/date> "2026-03-07T17:58:33.566Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/property> <http://www.w3.org/2002/12/cal/ical#completed>.
+<#it-operation-dc08dc44-abd0-4ee8-b3f5-d29a479a3851> a <https://vocab.noeldemartin.com/crdt/SetPropertyOperation>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/date> "2026-03-07T17:58:33.566Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/property> <https://schema.org/actionStatus>;
+    <https://vocab.noeldemartin.com/crdt/value> <https://schema.org/PotentialActionStatus>.

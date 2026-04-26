@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "community-solid-server --port 1526 --config @css:config/file.json --rootFilePath ./solid-server/data"
+  },
+  "dependencies": {
+    "@solid/community-server": "^7.1.9"
+  }
+}

@@ -1,0 +1,21 @@
+@prefix schema: <http://schema.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<#song_1_blinding_lights> a schema:MusicRecording ;
+    schema:name "Blinding Lights" ;
+    schema:byArtist <#artist_the_weeknd> ;
+    schema:inAlbum <#album_after_hours> ;
+    dc:creator "The Weeknd" ;
+    dc:title "Blinding Lights" ;
+    dc:issued "2024-01-01" ;
+    schema:image <http://localhost:1526/alice/music/cover_after_hours.jpg> .
+
+<#artist_the_weeknd> a schema:MusicGroup ;
+    schema:name "The Weeknd" ;
+    foaf:name "The Weeknd" .
+
+<#album_after_hours> a schema:MusicAlbum ;
+    schema:name "After Hours" ;
+    schema:byArtist <#artist_the_weeknd> ;
+    schema:datePublished "2024-01-01" .

@@ -1,0 +1,8 @@
+<#it> a <https://schema.org/Action>, <http://www.w3.org/2002/12/cal/ical#Vtodo>;
+    <http://www.w3.org/2002/12/cal/ical#summary> "Decorate";
+    <https://schema.org/actionStatus> <https://schema.org/PotentialActionStatus>;
+    <https://schema.org/name> "Decorate".
+<#it-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:48:05.648Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:48:05.648Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.

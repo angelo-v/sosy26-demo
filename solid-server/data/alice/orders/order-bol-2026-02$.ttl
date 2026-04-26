@@ -1,0 +1,109 @@
+<#it> a <https://schema.org/Order>;
+    <https://schema.org/orderNumber> "BOL-9182736450";
+    <https://schema.org/orderDate> "2026-02-03T14:55:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://schema.org/orderStatus> <https://schema.org/OrderDelivered>;
+    <https://schema.org/seller> <#merchant>;
+    <https://schema.org/orderedItem> <#item-1a2b3c4d-5e6f-7089-a1b2-c3d4e5f67890>, <#item-2b3c4d5e-6f7a-8091-b2c3-d4e5f6789012>, <#item-3c4d5e6f-7a8b-9012-c3d4-e5f678901234>;
+    <https://schema.org/priceCurrency> "EUR";
+    <https://schema.org/price> "104.89";
+    <http://purl.org/dc/terms/created> "2026-03-07T13:34:51Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://purl.org/dc/terms/modified> "2026-03-07T13:34:51Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#merchant> a <https://schema.org/Organization>;
+    <https://schema.org/name> "Bol.com";
+    <https://schema.org/url> <https://www.bol.com>.
+
+<#item-1a2b3c4d-5e6f-7089-a1b2-c3d4e5f67890> a <https://schema.org/OrderItem>;
+    <https://schema.org/orderItemStatus> <https://schema.org/OrderDelivered>;
+    <https://schema.org/orderQuantity> 1;
+    <https://schema.org/orderedItem> <#product-4d5e6f7a-8b9c-0123-d4e5-f67890123456>.
+
+<#product-4d5e6f7a-8b9c-0123-d4e5-f67890123456> a <https://schema.org/Product>;
+    <https://schema.org/name> "The Pragmatic Programmer, 20th Anniversary Edition";
+    <https://schema.org/description> "Your journey to mastery. This classic book has been completely rewritten and updated.";
+    <https://schema.org/sku> "0135957052";
+    <https://schema.org/brand> <#brand-pragprog>;
+    <https://schema.org/image> <https://m.media-amazon.com/images/I/71f743sOPoL._AC_SX679_.jpg>;
+    <https://schema.org/offers> <#offer-8b9c0d1e-2f3a-4567-b8c9-012345678901>.
+
+<#offer-8b9c0d1e-2f3a-4567-b8c9-012345678901> a <https://schema.org/Offer>;
+    <https://schema.org/price> "49.95";
+    <https://schema.org/priceCurrency> "USD".
+
+<#brand-pragprog> a <https://schema.org/Brand>;
+    <https://schema.org/name> "Pragmatic Bookshelf".
+
+<#item-2b3c4d5e-6f7a-8091-b2c3-d4e5f6789012> a <https://schema.org/OrderItem>;
+    <https://schema.org/orderItemStatus> <https://schema.org/OrderDelivered>;
+    <https://schema.org/orderQuantity> 1;
+    <https://schema.org/orderedItem> <#product-5e6f7a8b-9c0d-1234-e5f6-789012345678>.
+
+<#product-5e6f7a8b-9c0d-1234-e5f6-789012345678> a <https://schema.org/Product>;
+    <https://schema.org/name> "Moleskine Classic Notebook, Hard Cover, Large (5\" x 8.25\") Ruled/Lined, Black";
+    <https://schema.org/description> "The legendary notebook, now with an improved paper quality.";
+    <https://schema.org/sku> "8053853602831";
+    <https://schema.org/brand> <#brand-moleskine>;
+    <https://schema.org/image> <https://cdn.idealo.com/folder/Product/204835/6/204835671/s1_produktbild_gross/moleskine-tageskalender-2025-klassik-1-tag-auf-1-seite-pocket-hardcover-schwarz.jpg>;
+    <https://schema.org/offers> <#offer-0d1e2f3a-4b5c-6789-d0e1-345678901234>.
+
+<#offer-0d1e2f3a-4b5c-6789-d0e1-345678901234> a <https://schema.org/Offer>;
+    <https://schema.org/price> "22.95";
+    <https://schema.org/priceCurrency> "USD".
+
+<#brand-moleskine> a <https://schema.org/Brand>;
+    <https://schema.org/name> "Moleskine".
+
+<#item-3c4d5e6f-7a8b-9012-c3d4-e5f678901234> a <https://schema.org/OrderItem>;
+    <https://schema.org/orderItemStatus> <https://schema.org/OrderDelivered>;
+    <https://schema.org/orderQuantity> 1;
+    <https://schema.org/orderedItem> <#product-6f7a8b9c-0d1e-2345-f6a7-890123456789>.
+
+<#product-6f7a8b9c-0d1e-2345-f6a7-890123456789> a <https://schema.org/Product>;
+    <https://schema.org/name> "LAMY Safari Fountain Pen, Fine Nib, Charcoal";
+    <https://schema.org/description> "Classic design with durable ABS plastic body and ergonomic grip section.";
+    <https://schema.org/sku> "L17F";
+    <https://schema.org/brand> <#brand-lamy>;
+    <https://schema.org/image> <https://i5.walmartimages.com/seo/LAMY-Charcoal-Safari-Fountain-Pen-Fine-Nib_6bebb858-de39-499a-bf5a-f98414a7702b_1.cb3b15c6832244b4cd6f5711f96b5612.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF>;
+    <https://schema.org/offers> <#offer-2f3a4b5c-6d7e-8901-f2a3-567890123456>.
+
+<#offer-2f3a4b5c-6d7e-8901-f2a3-567890123456> a <https://schema.org/Offer>;
+    <https://schema.org/price> "31.99";
+    <https://schema.org/priceCurrency> "USD".
+
+<#brand-lamy> a <https://schema.org/Brand>;
+    <https://schema.org/name> "LAMY".
+
+<#it-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#item-1a2b3c4d-5e6f-7089-a1b2-c3d4e5f67890-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#item-1a2b3c4d-5e6f-7089-a1b2-c3d4e5f67890>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#item-2b3c4d5e-6f7a-8091-b2c3-d4e5f6789012-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#item-2b3c4d5e-6f7a-8091-b2c3-d4e5f6789012>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#item-3c4d5e6f-7a8b-9012-c3d4-e5f678901234-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#item-3c4d5e6f-7a8b-9012-c3d4-e5f678901234>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#product-4d5e6f7a-8b9c-0123-d4e5-f67890123456-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#product-4d5e6f7a-8b9c-0123-d4e5-f67890123456>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#product-5e6f7a8b-9c0d-1234-e5f6-789012345678-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#product-5e6f7a8b-9c0d-1234-e5f6-789012345678>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#product-6f7a8b9c-0d1e-2345-f6a7-890123456789-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#product-6f7a8b9c-0d1e-2345-f6a7-890123456789>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.

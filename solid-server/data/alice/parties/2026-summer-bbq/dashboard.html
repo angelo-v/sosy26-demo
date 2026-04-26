@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Summer BBQ 2026</title>
+    <script
+            type="module"
+            src="https://cdn.jsdelivr.net/npm/@pod-os/elements/dist/elements/elements.esm.js">
+    </script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@pod-os/elements/dist/elements/elements.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ── Design tokens ── */
+        :root {
+            --clr-bg: #fff7ed;
+            --clr-card: #ffffff;
+            --clr-hero-start: #f97316;
+            --clr-hero-end: #fbbf24;
+            --clr-accent: #ea580c;
+            --clr-accent-lt: #fff1e6;
+            --clr-text: #1c1917;
+            --clr-muted: #78716c;
+            --clr-border: #e7e5e4;
+            --radius-card: 1rem;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, .08), 0 1px 2px rgba(0, 0, 0, .05);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, .10), 0 2px 4px rgba(0, 0, 0, .06);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, .13), 0 4px 8px rgba(0, 0, 0, .07);
+            --pos-primary-color: var(--clr-accent);
+            --sidebar-width: 280px;
+            --topbar-height: 56px;
+        }
+
+        /* ── Reset / base ── */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Poppins', system-ui, sans-serif;
+            background: var(--clr-bg);
+            color: var(--clr-text);
+        }
+
+        /* ── Top login bar ── */
+        header {
+            height: var(--topbar-height);
+            padding: 0 1.5rem;
+            background: var(--clr-accent-lt);
+            border-bottom: 1px solid var(--clr-border);
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        /* ── App shell ── */
+        pos-app {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* ── Main layout: sidebar + content ── */
+        .layout {
+            display: flex;
+            flex: 1;
+            align-items: flex-start;
+        }
+
+        /* ── Tasks sidebar ── */
+        .sidebar {
+            width: var(--sidebar-width);
+            flex-shrink: 0;
+            position: sticky;
+            top: var(--topbar-height);
+            height: calc(100vh - var(--topbar-height));
+            overflow-y: auto;
+            background: var(--clr-card);
+            border-right: 1px solid var(--clr-border);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-header {
+            padding: 1.25rem 1.25rem .75rem;
+            border-bottom: 1px solid var(--clr-border);
+            background: var(--clr-card);
+        }
+
+        .sidebar-header h2 {
+            font-size: .95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            color: var(--clr-accent);
+            display: flex;
+            align-items: center;
+            gap: .6rem;
+        }
+
+        .sidebar-header h2::before {
+            content: '✓';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            background: var(--clr-accent);
+            color: #fff;
+            border-radius: .35rem;
+            font-size: .75rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .section-link {
+            font-size: .7rem;
+            font-weight: 600;
+            text-transform: none;
+            letter-spacing: .02em;
+            color: var(--clr-accent);
+            background: var(--clr-accent-lt);
+            border: 1px solid var(--clr-accent);
+            border-radius: 2rem;
+            padding: .2rem .65rem;
+            text-decoration: none;
+            transition: background .15s ease, color .15s ease;
+            white-space: nowrap;
+        }
+
+        .section-link:hover {
+            background: var(--clr-accent);
+            color: #fff;
+        }
+
+        .sidebar-body {
+            padding: .75rem 1rem 1.5rem;
+            flex: 1;
+        }
+
+        /* ── Tasks: checklist rows ── */
+        pos-list[if-typeof="https://schema.org/Action"] {
+            display: flex;
+            flex-direction: column;
+            gap: .4rem;
+        }
+
+        pos-list[if-typeof="https://schema.org/Action"] li {
+            display: flex;
+            align-items: flex-start;
+            gap: .7rem;
+            padding: .6rem .75rem;
+            background: var(--clr-bg);
+            border: 1px solid var(--clr-border);
+            border-radius: .5rem;
+            box-shadow: var(--shadow-sm);
+            list-style: none;
+            transition: background .15s ease;
+            cursor: default;
+        }
+
+        pos-list[if-typeof="https://schema.org/Action"] li:hover {
+            background: var(--clr-accent-lt);
+        }
+
+        pos-list[if-typeof="https://schema.org/Action"] li::before {
+            content: '';
+            flex-shrink: 0;
+            margin-top: .2rem;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 2px solid var(--clr-accent);
+            background: transparent;
+        }
+
+        pos-list[if-typeof="https://schema.org/Action"] li pos-label {
+            font-size: .82rem;
+            font-weight: 500;
+            color: var(--clr-text);
+            line-height: 1.4;
+        }
+
+        /* ── Main content area ── */
+        .main-content {
+            flex: 1;
+            min-width: 0;
+            padding-bottom: 4rem;
+        }
+
+        pos-resource {
+            display: block;
+        }
+
+        /* ── Hero banner ── */
+        .hero {
+            background: linear-gradient(135deg, var(--clr-hero-start) 0%, var(--clr-hero-end) 100%);
+            padding: 2.5rem 2rem 2rem;
+        }
+
+        .hero > h1 {
+            color: #ffffff;
+            font-size: clamp(1.6rem, 4vw, 2.4rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+            margin-bottom: .75rem;
+        }
+
+        .hero-date {
+            display: flex;
+            align-items: center;
+            gap: .45rem;
+            color: rgba(255, 255, 255, .92);
+            font-size: .9rem;
+            font-weight: 500;
+            letter-spacing: .02em;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-date svg {
+            flex-shrink: 0;
+            opacity: .85;
+        }
+
+        .hero-description {
+            color: rgba(255, 255, 255, .88);
+            font-size: .95rem;
+            line-height: 1.65;
+            max-width: 56ch;
+        }
+
+        /* ── Sections ── */
+        section {
+            padding: 1.5rem 2rem 2rem;
+            border-top: 1px solid var(--clr-border);
+        }
+
+        section h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            color: var(--clr-accent);
+            margin-bottom: 1.25rem;
+            padding-left: .75rem;
+            border-left: 4px solid var(--clr-hero-end);
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+        }
+
+        /* ── ul wrappers: transparent passthrough ── */
+        section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* ── Guests: flex-wrap of small avatar cards ── */
+        pos-list[rel="http://schema.org/attendee"] {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        pos-list[rel="http://schema.org/attendee"] li {
+            background: var(--clr-bg);
+            border: 1px solid var(--clr-border);
+            border-radius: var(--radius-card);
+            padding: 1rem .75rem .75rem;
+            min-width: 90px;
+            box-shadow: var(--shadow-sm);
+            font-size: .8rem;
+            font-weight: 500;
+            text-align: center;
+            color: var(--clr-text);
+        }
+
+        pos-list[rel="http://schema.org/attendee"] li article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        pos-list[rel="http://schema.org/attendee"] li pos-picture {
+            display: block;
+            --width: 128px;
+            --height: 128px;
+            --border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+            background: none;
+        }
+
+        pos-list[rel="http://schema.org/attendee"] li pos-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+        }
+
+        /* ── Food & Drinks: responsive image-card grid ── */
+        pos-list[rel="http://schema.org/recipe"] {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 1rem;
+        }
+
+        pos-list[rel="http://schema.org/recipe"] li {
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--clr-border);
+            transition: box-shadow .2s ease, transform .2s ease;
+        }
+
+        pos-list[rel="http://schema.org/recipe"] li:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-3px);
+        }
+
+        pos-list[rel="http://schema.org/recipe"] article {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        pos-list[rel="http://schema.org/recipe"] pos-picture {
+            display: block;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            background: var(--clr-accent-lt);
+        }
+
+        pos-list[rel="http://schema.org/recipe"] article > pos-label {
+            display: block;
+            padding: .6rem .75rem 0;
+            font-size: .85rem;
+            font-weight: 600;
+            color: var(--clr-text);
+            background: var(--clr-card);
+            line-height: 1.3;
+        }
+
+        pos-list[rel="http://schema.org/recipe"] article {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ── Dietary restriction pills ── */
+        pos-list[rel="http://schema.org/suitableForDiet"] {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .35rem;
+            padding: 0 .75rem .6rem;
+            background: var(--clr-card);
+        }
+
+        pos-list[rel="http://schema.org/suitableForDiet"] pos-label {
+            display: inline-flex;
+            align-items: center;
+            padding: .25rem .55rem;
+            font-size: .7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .02em;
+            background: #dcfce7;
+            color: #15803d;
+            border-radius: 1rem;
+            border: 1px solid #86efac;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+
+        pos-label {
+            white-space: normal;
+        }
+
+        /* ── Songs: card grid ── */
+        pos-list[rel="http://schema.org/hasPart"] {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 1rem;
+        }
+
+        pos-list[rel="http://schema.org/hasPart"] li {
+            background: var(--clr-card);
+            border: 1px solid var(--clr-border);
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: box-shadow .2s ease, transform .2s ease;
+        }
+
+        pos-list[rel="http://schema.org/hasPart"] li:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-3px);
+        }
+
+        pos-list[rel="http://schema.org/hasPart"] article {
+            display: flex;
+            flex-direction: column;
+        }
+
+        pos-list[rel="http://schema.org/hasPart"] pos-picture {
+            display: block;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            background: var(--clr-accent-lt);
+            --width: 100%;
+            --height: auto;
+        }
+
+        pos-list[rel="http://schema.org/hasPart"] pos-label {
+            display: block;
+            padding: .5rem .75rem .6rem;
+            font-size: .82rem;
+            font-weight: 600;
+            color: var(--clr-text);
+            line-height: 1.3;
+        }
+
+        /* ── Sub-events ── */
+        .sub-event {
+            margin-bottom: 1.5rem;
+        }
+
+        .sub-event h3 {
+            font-size: .95rem;
+            font-weight: 600;
+            color: var(--clr-muted);
+            text-transform: uppercase;
+            letter-spacing: .06em;
+            margin-bottom: .75rem;
+        }
+
+        .sub-event ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        pos-list[rel="http://schema.org/subEvent"] {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Movies inside a sub-event: same card grid as recipes */
+        .sub-event pos-list[rel="http://schema.org/workFeatured"] {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 1rem;
+        }
+
+        .sub-event pos-list[rel="http://schema.org/workFeatured"] li {
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--clr-border);
+            transition: box-shadow .2s ease, transform .2s ease;
+        }
+
+        .sub-event pos-list[rel="http://schema.org/workFeatured"] li:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-3px);
+        }
+
+        .sub-event pos-list[rel="http://schema.org/workFeatured"] article {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .sub-event pos-list[rel="http://schema.org/workFeatured"] pos-picture {
+            display: block;
+            width: 100%;
+            overflow: hidden;
+            background: var(--clr-accent-lt);
+            --width: 100%;
+            --height: 100px;
+            --object-fit: cover;
+        }
+
+        .sub-event pos-list[rel="http://schema.org/workFeatured"] pos-label {
+            display: block;
+            padding: .6rem .75rem .75rem;
+            font-size: .85rem;
+            font-weight: 600;
+            color: var(--clr-text);
+            background: var(--clr-card);
+            line-height: 1.3;
+        }
+
+        /* ── Responsive: collapse sidebar below 700px ── */
+        @media (max-width: 700px) {
+            .layout {
+                flex-direction: column-reverse;
+            }
+
+            .sidebar {
+                width: 100%;
+                position: static;
+                height: auto;
+                border-right: none;
+                border-top: 1px solid var(--clr-border);
+            }
+        }
+    </style>
+</head>
+<body>
+<pos-app restore-previous-session>
+    <header>
+        <pos-login></pos-login>
+    </header>
+    <div class="layout">
+        <!-- ── Tasks sidebar ── -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Tasks <a class="section-link" href="https://focus.noeldemartin.com/main/summer-bbq" target="_blank" rel="noopener">Edit</a></h2>
+            </div>
+            <div class="sidebar-body">
+                <pos-resource uri="http://localhost:1526/alice/tasks/main/summer-bbq/">
+                    <pos-list fetch rel="http://www.w3.org/ns/ldp#contains">
+                        <template>
+                            <!-- fetch files -->
+                        </template>
+                    </pos-list>
+                    <pos-list if-typeof="https://schema.org/Action">
+                        <template>
+                            <li>
+                                <pos-label></pos-label>
+                            </li>
+                        </template>
+                    </pos-list>
+                </pos-resource>
+            </div>
+        </aside>
+
+        <!-- ── Main content ── -->
+        <main class="main-content">
+            <!--Alternative event: http://localhost:1526/alice/parties/2026-autumn-harvest/index.ttl#this -->
+            <pos-resource uri="http://localhost:1526/alice/parties/2026-summer-bbq/index.ttl#this">
+                <div class="hero">
+                    <h1>
+                        <pos-label></pos-label>
+                    </h1>
+                    <div class="hero-date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                        <pos-value predicate="http://schema.org/startDate"></pos-value>
+                    </div>
+                    <p class="hero-description">
+                        <pos-description></pos-description>
+                    </p>
+                </div>
+
+                <section>
+                    <h2>Guests</h2>
+                    <ul>
+                        <pos-list fetch rel="http://schema.org/attendee">
+                            <template>
+                                <li>
+                                    <pos-rich-link>
+                                        <article>
+                                            <pos-picture no-upload></pos-picture>
+                                            <pos-label></pos-label>
+                                        </article>
+                                    </pos-rich-link>
+                                </li>
+                            </template>
+                        </pos-list>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Food & Drinks</h2>
+                    <ul>
+                        <pos-list fetch rel="http://schema.org/recipe">
+                            <template>
+                                <li>
+                                    <pos-rich-link>
+                                        <article>
+                                            <pos-picture no-upload></pos-picture>
+                                            <pos-label></pos-label>
+                                            <pos-list rel="http://schema.org/suitableForDiet">
+                                                <template>
+                                                    <pos-label></pos-label>
+                                                </template>
+                                            </pos-list>
+                                        </article>
+                                    </pos-rich-link>
+                                </li>
+                            </template>
+                        </pos-list>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Music</h2>
+                    <pos-list fetch rel="http://schema.org/workFeatured">
+                        <template>
+                            <ul>
+                                <pos-list fetch rel="http://schema.org/hasPart">
+                                    <template>
+                                        <li>
+                                            <pos-rich-link>
+                                                <article>
+                                                    <pos-picture no-upload></pos-picture>
+                                                    <pos-label></pos-label>
+                                                </article>
+                                            </pos-rich-link>
+                                        </li>
+                                    </template>
+                                </pos-list>
+                            </ul>
+                        </template>
+                    </pos-list>
+                </section>
+
+                <section>
+                    <pos-list fetch rel="http://schema.org/subEvent">
+                        <template>
+                            <div class="sub-event">
+                                <h2><pos-label></pos-label></h2>
+                                <ul>
+                                    <pos-list fetch rel="http://schema.org/workFeatured">
+                                        <template>
+                                            <li>
+                                                <pos-rich-link>
+                                                    <article>
+                                                        <pos-picture no-upload></pos-picture>
+                                                        <pos-label></pos-label>
+                                                    </article>
+                                                </pos-rich-link>
+                                            </li>
+                                        </template>
+                                    </pos-list>
+                                </ul>
+                            </div>
+                        </template>
+                    </pos-list>
+                </section>
+            </pos-resource>
+        </main>
+    </div>
+</pos-app>
+<script>
+  document.addEventListener('pod-os:link', (event) => {
+    window.open('https://browser.pod-os.org?uri=' + encodeURIComponent(event.detail), '_blank');
+  });
+</script>
+</body>
+</html>

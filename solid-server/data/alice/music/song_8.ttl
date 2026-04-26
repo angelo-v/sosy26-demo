@@ -1,0 +1,21 @@
+@prefix schema: <http://schema.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<#song_8_heat_waves> a schema:MusicRecording ;
+    schema:name "Heat Waves" ;
+    schema:byArtist <#artist_glass_animals> ;
+    schema:inAlbum <#album_dreamland> ;
+    dc:creator "Glass Animals" ;
+    dc:title "Heat Waves" ;
+    dc:issued "2024-01-01" ;
+    schema:image <http://localhost:1526/alice/music/cover_dreamland.jpg> .
+
+<#artist_glass_animals> a schema:MusicGroup ;
+    schema:name "Glass Animals" ;
+    foaf:name "Glass Animals" .
+
+<#album_dreamland> a schema:MusicAlbum ;
+    schema:name "Dreamland" ;
+    schema:byArtist <#artist_glass_animals> ;
+    schema:datePublished "2024-01-01" .

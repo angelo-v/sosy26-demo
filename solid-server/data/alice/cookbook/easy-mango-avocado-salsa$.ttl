@@ -1,0 +1,34 @@
+<#it> a <https://schema.org/Recipe>;
+    <https://schema.org/description> "This Mango Avocado Salsa is a vibrant celebration of summer. Starring peak-season mangos, creamy avocado, and just the right kick of jalapeño heat, this balanced salsa is sweet, tangy, crunchy–and easy to make!";
+    <https://schema.org/image> <https://rainbowplantlife.com/wp-content/uploads/2020/05/Mango-Salsa-hero-5.jpg>;
+    <https://schema.org/name> "Easy Mango Avocado Salsa";
+    <https://schema.org/prepTime> "PT20M";
+    <https://schema.org/recipeIngredient> "2 cups peeled and diced ripe mango ((~ 11 oz / 320g diced mango, see Note 1))", "6 oz (170g) cherry tomatoes,  (quartered (see Note 2))", "3 tablespoons (45 mL) freshly squeezed lime juice  ((about 1 ½ limes))", "3 tablespoons (45 mL) freshly squeezed orange juice", "2 to 3  jalapeños, (finely chopped (see Note 3))", "1  large ripe avocado, (diced)", "½ cup (70g) diced Persian or English cucumber", "½ cup (70g) diced red onion", "½ cup (8g)  fresh cilantro,  (finely chopped)", "Sea salt and freshly cracked black pepper";
+    <https://schema.org/recipeInstructions> <#3e0c922d-096e-4127-93e6-3a1c02e0f48f>, <#0cb07a71-90fb-44d4-afdd-e3690ca0e8a1>, <#a5293a89-207b-409f-8458-5e91a30e65b4>;
+    <https://schema.org/recipeYield> "8";
+    <https://schema.org/sameAs> <https://rainbowplantlife.com/easy-mango-avocado-salsa/>.
+<#3e0c922d-096e-4127-93e6-3a1c02e0f48f> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 1;
+    <https://schema.org/text> "In a medium to large bowl, combine the diced mango, red onion, cucumber, cherry tomatoes, jalapeños, orange juice, lime juice, and cilantro. Mix to combine. Season to taste with salt and pepper.".
+<#0cb07a71-90fb-44d4-afdd-e3690ca0e8a1> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 2;
+    <https://schema.org/text> "If possible, allow the salsa to rest at room temperature (or in the fridge) for 20 to 30 minutes to allow the flavors to deepen.".
+<#a5293a89-207b-409f-8458-5e91a30e65b4> a <https://schema.org/HowToStep>;
+    <https://schema.org/position> 3;
+    <https://schema.org/text> "Before serving, add the diced avocado and gently mix to combine, taking care to not smash the avocado. Taste for seasonings and adjust as needed.".
+<#3e0c922d-096e-4127-93e6-3a1c02e0f48f-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:11.175Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#3e0c922d-096e-4127-93e6-3a1c02e0f48f>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:11.175Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#0cb07a71-90fb-44d4-afdd-e3690ca0e8a1-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:11.176Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#0cb07a71-90fb-44d4-afdd-e3690ca0e8a1>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:11.176Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#a5293a89-207b-409f-8458-5e91a30e65b4-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:11.176Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#a5293a89-207b-409f-8458-5e91a30e65b4>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:11.176Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<#it-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:29:11.174Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:29:11.174Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.

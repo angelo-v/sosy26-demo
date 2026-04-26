@@ -1,0 +1,79 @@
+<#it> a <https://schema.org/Order>;
+    <https://schema.org/orderNumber> "MM-5047382910";
+    <https://schema.org/orderDate> "2026-02-20T09:12:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://schema.org/orderStatus> <https://schema.org/OrderProcessing>;
+    <https://schema.org/seller> <#merchant>;
+    <https://schema.org/orderedItem> <#item-3a4b5c6d-7e8f-9012-3a4b-5c6d7e8f9012>, <#item-4b5c6d7e-8f9a-0123-4b5c-6d7e8f901234>;
+    <https://schema.org/priceCurrency> "EUR";
+    <https://schema.org/price> "114.98";
+    <http://purl.org/dc/terms/created> "2026-03-07T13:34:51Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://purl.org/dc/terms/modified> "2026-03-07T13:34:51Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#merchant> a <https://schema.org/Organization>;
+    <https://schema.org/name> "MediaMarkt";
+    <https://schema.org/url> <https://www.mediamarkt.com>.
+
+<#item-3a4b5c6d-7e8f-9012-3a4b-5c6d7e8f9012> a <https://schema.org/OrderItem>;
+    <https://schema.org/orderItemStatus> <https://schema.org/OrderProcessing>;
+    <https://schema.org/orderQuantity> 1;
+    <https://schema.org/orderedItem> <#product-5c6d7e8f-9a0b-1234-5c6d-7e8f90123456>.
+
+<#product-5c6d7e8f-9a0b-1234-5c6d-7e8f90123456> a <https://schema.org/Product>;
+    <https://schema.org/name> "Philips Hue White and Color Ambiance A19 LED Smart Bulb Starter Kit";
+    <https://schema.org/description> "Control your lights from anywhere with the Philips Hue app. Works with Alexa, Google Assistant, and Apple HomeKit.";
+    <https://schema.org/sku> "562777";
+    <https://schema.org/brand> <#brand-philips>;
+    <https://schema.org/image> <https://m.media-amazon.com/images/I/61kjVP0v1QL._AC_SY300_SX300_QL70_ML2_.jpg>;
+    <https://schema.org/offers> <#offer-8f9a0b1c-2d3e-4567-8f9a-0b1c23456789>.
+
+<#offer-8f9a0b1c-2d3e-4567-8f9a-0b1c23456789> a <https://schema.org/Offer>;
+    <https://schema.org/price> "89.99";
+    <https://schema.org/priceCurrency> "USD".
+
+<#brand-philips> a <https://schema.org/Brand>;
+    <https://schema.org/name> "Philips".
+
+<#item-4b5c6d7e-8f9a-0123-4b5c-6d7e8f901234> a <https://schema.org/OrderItem>;
+    <https://schema.org/orderItemStatus> <https://schema.org/OrderProcessing>;
+    <https://schema.org/orderQuantity> 1;
+    <https://schema.org/orderedItem> <#product-6d7e8f9a-0b1c-2345-6d7e-8f9012345678>.
+
+<#product-6d7e8f9a-0b1c-2345-6d7e-8f9012345678> a <https://schema.org/Product>;
+    <https://schema.org/name> "TP-Link Kasa Smart WiFi Plug Mini (2-Pack)";
+    <https://schema.org/description> "Control your devices from anywhere, schedule on/off times, and track energy usage.";
+    <https://schema.org/sku> "EP25P2";
+    <https://schema.org/brand> <#brand-tplink>;
+    <https://schema.org/image> <https://cdn.idealo.com/folder/Product/203492/4/203492424/s1_produktbild_gross/tp-link-tapo-p100-mini-smart-2-pack.jpg>;
+    <https://schema.org/offers> <#offer-0b1c2d3e-4f5a-6789-0b1c-2d3e45678901>.
+
+<#offer-0b1c2d3e-4f5a-6789-0b1c-2d3e45678901> a <https://schema.org/Offer>;
+    <https://schema.org/price> "24.99";
+    <https://schema.org/priceCurrency> "USD".
+
+<#brand-tplink> a <https://schema.org/Brand>;
+    <https://schema.org/name> "TP-Link".
+
+<#it-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#it>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#item-3a4b5c6d-7e8f-9012-3a4b-5c6d7e8f9012-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#item-3a4b5c6d-7e8f-9012-3a4b-5c6d7e8f9012>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#item-4b5c6d7e-8f9a-0123-4b5c-6d7e8f901234-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#item-4b5c6d7e-8f9a-0123-4b5c-6d7e8f901234>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#product-5c6d7e8f-9a0b-1234-5c6d-7e8f90123456-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#product-5c6d7e8f-9a0b-1234-5c6d-7e8f90123456>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+
+<#product-6d7e8f9a-0b1c-2345-6d7e-8f9012345678-metadata> a <https://vocab.noeldemartin.com/crdt/Metadata>;
+    <https://vocab.noeldemartin.com/crdt/resource> <#product-6d7e8f9a-0b1c-2345-6d7e-8f9012345678>;
+    <https://vocab.noeldemartin.com/crdt/createdAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <https://vocab.noeldemartin.com/crdt/updatedAt> "2026-03-07T13:34:51.000Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.

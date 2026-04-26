@@ -1,0 +1,28 @@
+@prefix schema: <http://schema.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<#music-collection> a schema:MusicPlaylist ;
+    schema:name "Top 10 Songs" ;
+    schema:hasPart <song_1.ttl#song_1_blinding_lights> ;
+    schema:hasPart <song_2.ttl#song_2_shape_of_you> ;
+    schema:hasPart <song_3.ttl#song_3_someone_you_loved> ;
+    schema:hasPart <song_4.ttl#song_4_don't_start_now> ;
+    schema:hasPart <song_5.ttl#song_5_as_it_was> ;
+    schema:hasPart <song_6.ttl#song_6_anti-hero> ;
+    schema:hasPart <song_7.ttl#song_7_levitating> ;
+    schema:hasPart <song_8.ttl#song_8_heat_waves> ;
+    schema:hasPart <song_9.ttl#song_9_flowers> ;
+    schema:hasPart <song_10.ttl#song_10_uptown_funk> ;
+    dc:created "2024-03-07" ;
+    dc:description "A collection of 10 popular songs" .
+
+<song_1.ttl#song_1_blinding_lights> schema:name "Blinding Lights" .
+<song_2.ttl#song_2_shape_of_you> schema:name "Shape of You" .
+<song_3.ttl#song_3_someone_you_loved> schema:name "Someone You Loved" .
+<song_4.ttl#song_4_don't_start_now> schema:name "Don't Start Now" .
+<song_5.ttl#song_5_as_it_was> schema:name "As It Was" .
+<song_6.ttl#song_6_anti-hero> schema:name "Anti-Hero" .
+<song_7.ttl#song_7_levitating> schema:name "Levitating" .
+<song_8.ttl#song_8_heat_waves> schema:name "Heat Waves" .
+<song_9.ttl#song_9_flowers> schema:name "Flowers" .
+<song_10.ttl#song_10_uptown_funk> schema:name "Uptown Funk" .
