@@ -27,3 +27,11 @@ Alice has built an [inventory](https://browser.pod-os.org/?uri=http%3A%2F%2Floca
 2. Create a new [schema:LendAction](https://schema.org/LendAction) using "Add new thing"
 3. Add `startDate`, `borrower` and `object` using "Add literal" and "Add relation" in the "Data" tool
 4. [Build a dashboard](https://pod-os.org/getting-started/quick-start/) showing all lendings using PodOS elements
+
+### Solution
+
+For a possible solution check out the `lendings` branch.
+
+```bash
+git checkout lendings
+```
