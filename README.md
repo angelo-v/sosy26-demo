@@ -21,7 +21,7 @@ Password: `alice`
 
 ## Exercise
 
-Alice has built an [inventory](https://browser.pod-os.org/?uri=http%3A%2F%2Flocalhost%3A1526%2Falice%2Finventory) from the things she [ordered](https://browser.pod-os.org/?uri=http%3A%2F%2Flocalhost%3A1526%2Falice%2Forders%2F), but she lent some of her things to her [friends](http://localhost:1526/alice/my-contacts/people.ttl). She wants to keep track of what she gave to whom.
+Alice has built an [inventory](https://browser.pod-os.org/?uri=http%3A%2F%2Flocalhost%3A1526%2Falice%2Finventory) from the things she [ordered](https://browser.pod-os.org/?uri=http%3A%2F%2Flocalhost%3A1526%2Falice%2Forders%2F), but she lent some of her things to her [friends](https://browser.pod-os.org/?uri=http%3A%2F%2Flocalhost%3A1526%2Falice%2Fmy-contacts%2Fpeople.ttl). She wants to keep track of what she gave to whom.
 
 1. Create a new container for `lendings` using [PodOS Browser](https://browser.pod-os.org)
 2. Create a new [schema:LendAction](https://schema.org/LendAction) using "Add new thing"
