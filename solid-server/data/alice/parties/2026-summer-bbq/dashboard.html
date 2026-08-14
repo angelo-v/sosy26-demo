@@ -194,6 +194,22 @@
             line-height: 1.4;
         }
 
+        pos-list[if-typeof="https://schema.org/Action"] li.done::before {
+            content: '✓';
+            background: var(--clr-accent);
+            border-color: var(--clr-accent);
+            color: #fff;
+            font-size: .7rem;
+            font-weight: 700;
+            line-height: 12px;
+            text-align: center;
+        }
+
+        pos-list[if-typeof="https://schema.org/Action"] li.done pos-label {
+            text-decoration: line-through;
+            opacity: .7;
+        }
+
         /* ── Main content area ── */
         .main-content {
             flex: 1;
@@ -339,6 +355,11 @@
             display: flex;
             flex-direction: column;
             height: 100%;
+            background-color: var(--clr-card);
+        }
+
+        pos-list[rel="http://schema.org/recipe"] pos-rich-link {
+            display: block;
         }
 
         pos-list[rel="http://schema.org/recipe"] pos-picture {
@@ -349,19 +370,13 @@
             background: var(--clr-accent-lt);
         }
 
-        pos-list[rel="http://schema.org/recipe"] article > pos-label {
+        pos-list[rel="http://schema.org/recipe"] article pos-label {
             display: block;
-            padding: .6rem .75rem 0;
+            padding: .6rem .75rem .6rem;
             font-size: .85rem;
             font-weight: 600;
             color: var(--clr-text);
-            background: var(--clr-card);
             line-height: 1.3;
-        }
-
-        pos-list[rel="http://schema.org/recipe"] article {
-            display: flex;
-            flex-direction: column;
         }
 
         /* ── Dietary restriction pills ── */
@@ -391,6 +406,39 @@
 
         pos-label {
             white-space: normal;
+        }
+
+        /* ── Dietary badges (vegan / gluten-free) ── */
+        .diet-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .3rem;
+            align-self: flex-start;
+            margin: .3rem .75rem .7rem;
+            padding: .25rem .6rem;
+            font-size: .68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .03em;
+            border-radius: 1rem;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+
+        .diet-badge svg {
+            flex-shrink: 0;
+        }
+
+        .diet-badge--vegan {
+            background: #dcfce7;
+            color: #15803d;
+            border: 1px solid #86efac;
+        }
+
+        .diet-badge--gf {
+            background: #fef3c7;
+            color: #b45309;
+            border: 1px solid #fcd34d;
         }
 
         /* ── Songs: card grid ── */
@@ -545,9 +593,20 @@
                     </pos-list>
                     <pos-list if-typeof="https://schema.org/Action">
                         <template>
-                            <li>
-                                <pos-label></pos-label>
-                            </li>
+                            <pos-switch>
+                                <pos-case
+                                        if-property="https://schema.org/actionStatus"
+                                        every-value-eq="https://schema.org/CompletedActionStatus" >
+                                    <template>
+                                        <li class="done"><pos-label></pos-label></li>
+                                    </template>
+                                </pos-case>
+                                <pos-case else>
+                                    <template>
+                                        <li><pos-label></pos-label></li>
+                                    </template>
+                                </pos-case>
+                            </pos-switch>
                         </template>
                     </pos-list>
                 </pos-resource>
@@ -600,17 +659,29 @@
                         <pos-list fetch rel="http://schema.org/recipe">
                             <template>
                                 <li>
-                                    <pos-rich-link>
-                                        <article>
+                                    <article>
+                                        <pos-rich-link>
                                             <pos-picture no-upload></pos-picture>
                                             <pos-label></pos-label>
-                                            <pos-list rel="http://schema.org/suitableForDiet">
-                                                <template>
-                                                    <pos-label></pos-label>
-                                                </template>
-                                            </pos-list>
-                                        </article>
-                                    </pos-rich-link>
+                                        </pos-rich-link>
+                                        <pos-switch>
+                                            <pos-case
+                                                    if-property="http://schema.org/suitableForDiet"
+                                                    some-value-eq="https://schema.org/VeganDiet">
+                                                <template><span class="diet-badge diet-badge--vegan">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 4 13c0-5 4-9 11-9 0 7-4 11-9 11Z"/><path d="M11 20c0-4 3-7 9-7"/></svg>
+                                                        Vegan</span></template>
+                                            </pos-case>
+                                            <pos-case
+                                                    if-property="http://schema.org/suitableForDiet"
+                                                    some-value-eq="https://schema.org/GlutenFreeDiet">
+                                                <template><span class="diet-badge diet-badge--gf">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"/><path d="M12 7c-2 0-3-1-3-3"/><path d="M12 7c2 0 3-1 3-3"/><path d="M12 12c-2 0-3-1-3-3"/><path d="M12 12c2 0 3-1 3-3"/><path d="M12 17c-2 0-3-1-3-3"/><path d="M12 17c2 0 3-1 3-3"/></svg>
+                                                        Gluten-free</span></template>
+                                            </pos-case>
+                                        </pos-switch>
+
+                                    </article>
                                 </li>
                             </template>
                         </pos-list>
